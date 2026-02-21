@@ -1944,6 +1944,7 @@ Artifacts:
   - v3.31.1
   - v3.31.2
   - v3.31.3
+  - v3.31.4
 - SourceArtifact: quay.io/calico/node
   Tags:
   - v3.16.5
