@@ -39,11 +39,11 @@ jobs:
           curl --silent --fail --location --output regsync https://github.com/regclient/regclient/releases/download/v0.8.3/regsync-linux-amd64
           chmod +x regsync
 
-      - name: Mirror artifacts
+   - name: Mirror artifacts
         run: |
           export PATH=$PATH:$(pwd)
           if [ "${{ inputs.debug }}" = "true" ]; then
-            time regsync once --logopt json --missing --config regsync.yaml --verbosity debug
+            time regsync once --logopt json --config regsync.yaml --verbosity debug
           else
-            time regsync once --logopt json --missing --config regsync.yaml
+            time regsync once --logopt json --config regsync.yaml
           fi
