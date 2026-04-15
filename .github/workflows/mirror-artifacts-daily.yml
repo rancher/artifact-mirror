@@ -34,7 +34,7 @@ jobs:
         run: |
           REGSYNC_CHECKSUM=bbfcf9dc120bd67ad6163eb80667005c47570ff5a90157f0d26efb247906548d
           curl --silent --fail --location --output regsync https://github.com/regclient/regclient/releases/download/v0.8.3/regsync-linux-amd64
-          echo "${REGSYNC_CHECKSUM}  regsync-linux-amd64" | sha256sum -c -
+          echo "${REGSYNC_CHECKSUM}  regsync" | sha256sum -c -
           chmod +x regsync
 
       - name: Mirror daily artifacts
