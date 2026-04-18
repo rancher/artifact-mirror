@@ -200,7 +200,7 @@ func (entry ConfigEntry) Run(ctx context.Context, opts AutoUpdateOptions) error 
 		return fmt.Errorf("failed to list pull requests: %w", err)
 	}
 	if len(pullRequests) == 1 {
-		if len(pullRequests[0].RequestedReviewers) <= 1 && len(entry.Reviewers) > 0 { // only codeowner as reviewer
+		if pullRequests[0].GetState() == "open" && len(pullRequests[0].RequestedReviewers) <= 1 && len(entry.Reviewers) > 0 { // only codeowner as reviewer
 			fmt.Printf("Reviewers are %v", entry.Reviewers)
 			_, _, err := opts.GithubClient.PullRequests.RequestReviewers(ctx, opts.GithubOwner, opts.GithubRepo, pullRequests[0].GetNumber(), github.ReviewersRequest{
 				NodeID:        pullRequests[0].NodeID,
