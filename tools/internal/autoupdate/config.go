@@ -209,6 +209,7 @@ func (entry ConfigEntry) Run(ctx context.Context, opts AutoUpdateOptions) error 
 			if err != nil {
 				fmt.Printf("warning: failed to add reviewers [%v] to PR %s : %s\n", entry.Reviewers, pullRequests[0].GetNumber(), err)
 			}
+			fmt.Printf("Added reviewers [%v] to PR %s\n", entry.Reviewers, pullRequests[0].GetHTMLURL())
 		}
 		fmt.Printf("%s: found existing PR with head branch %s: %s\n", entry.Name, headBranch, pullRequests[0].GetHTMLURL())
 		return nil
@@ -305,6 +306,7 @@ func (entry ConfigEntry) CreateArtifactUpdatePullRequest(ctx context.Context, op
 	if err != nil {
 		fmt.Printf("warning: failed to add reviewers to PR %s : %s\n", pullRequest.GetHTMLURL(), err)
 	}
+	fmt.Printf("Added reviewers [%v] to PR %s\n", entry.Reviewers, pullRequest.GetHTMLURL())
 	return nil
 }
 
