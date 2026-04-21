@@ -2417,6 +2417,9 @@ sync:
 - source: ghcr.io/prometheus-community/windows-exporter:0.31.3
   target: docker.io/rancher/mirrored-prometheus-windows-exporter:0.31.3
   type: image
+- source: ghcr.io/prometheus-community/windows-exporter:0.31.6
+  target: docker.io/rancher/mirrored-prometheus-windows-exporter:0.31.6
+  type: image
 - source: ghcr.io/prometheus-community/windows-exporter:0.25.1
   target: registry.suse.com/rancher/mirrored-prometheus-windows-exporter:0.25.1
   type: image
@@ -2432,6 +2435,9 @@ sync:
 - source: ghcr.io/prometheus-community/windows-exporter:0.31.3
   target: registry.suse.com/rancher/mirrored-prometheus-windows-exporter:0.31.3
   type: image
+- source: ghcr.io/prometheus-community/windows-exporter:0.31.6
+  target: registry.suse.com/rancher/mirrored-prometheus-windows-exporter:0.31.6
+  type: image
 - source: ghcr.io/prometheus-community/windows-exporter:0.25.1
   target: stgregistry.suse.com/rancher/mirrored-prometheus-windows-exporter:0.25.1
   type: image
@@ -2446,6 +2452,9 @@ sync:
   type: image
 - source: ghcr.io/prometheus-community/windows-exporter:0.31.3
   target: stgregistry.suse.com/rancher/mirrored-prometheus-windows-exporter:0.31.3
+  type: image
+- source: ghcr.io/prometheus-community/windows-exporter:0.31.6
+  target: stgregistry.suse.com/rancher/mirrored-prometheus-windows-exporter:0.31.6
   type: image
 - source: grafana/grafana:7.1.5
   target: docker.io/rancher/grafana-grafana:7.1.5
@@ -20090,11 +20099,20 @@ sync:
 - source: quay.io/prometheus/prometheus:v2.18.2
   target: docker.io/rancher/mirrored-prom-prometheus:v2.18.2
   type: image
+- source: quay.io/prometheus/prometheus:v3.8.1
+  target: docker.io/rancher/mirrored-prom-prometheus:v3.8.1
+  type: image
 - source: quay.io/prometheus/prometheus:v2.18.2
   target: registry.suse.com/rancher/mirrored-prom-prometheus:v2.18.2
   type: image
+- source: quay.io/prometheus/prometheus:v3.8.1
+  target: registry.suse.com/rancher/mirrored-prom-prometheus:v3.8.1
+  type: image
 - source: quay.io/prometheus/prometheus:v2.18.2
   target: stgregistry.suse.com/rancher/mirrored-prom-prometheus:v2.18.2
+  type: image
+- source: quay.io/prometheus/prometheus:v3.8.1
+  target: stgregistry.suse.com/rancher/mirrored-prom-prometheus:v3.8.1
   type: image
 - source: quay.io/prometheus/prometheus:v2.24.0
   target: docker.io/rancher/mirrored-prometheus-prometheus:v2.24.0
