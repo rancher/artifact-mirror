@@ -266,6 +266,9 @@ sync:
 - source: coredns/coredns:1.14.2
   target: docker.io/rancher/mirrored-coredns-coredns:1.14.2
   type: image
+- source: coredns/coredns:1.14.3
+  target: docker.io/rancher/mirrored-coredns-coredns:1.14.3
+  type: image
 - source: coredns/coredns:1.6.2
   target: docker.io/rancher/mirrored-coredns-coredns:1.6.2
   type: image
@@ -341,6 +344,9 @@ sync:
 - source: coredns/coredns:1.14.2
   target: registry.suse.com/rancher/mirrored-coredns-coredns:1.14.2
   type: image
+- source: coredns/coredns:1.14.3
+  target: registry.suse.com/rancher/mirrored-coredns-coredns:1.14.3
+  type: image
 - source: coredns/coredns:1.6.2
   target: registry.suse.com/rancher/mirrored-coredns-coredns:1.6.2
   type: image
@@ -415,6 +421,9 @@ sync:
   type: image
 - source: coredns/coredns:1.14.2
   target: stgregistry.suse.com/rancher/mirrored-coredns-coredns:1.14.2
+  type: image
+- source: coredns/coredns:1.14.3
+  target: stgregistry.suse.com/rancher/mirrored-coredns-coredns:1.14.3
   type: image
 - source: coredns/coredns:1.6.2
   target: stgregistry.suse.com/rancher/mirrored-coredns-coredns:1.6.2
