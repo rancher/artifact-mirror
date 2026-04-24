@@ -207,7 +207,7 @@ func (entry ConfigEntry) Run(ctx context.Context, opts AutoUpdateOptions) error 
 				TeamReviewers: entry.Reviewers,
 			})
 			if err != nil {
-				fmt.Printf("warning: failed to add reviewers [%v] to PR %s : %s\n", entry.Reviewers, pullRequests[0].GetNumber(), err)
+				fmt.Printf("warning: failed to add reviewers [%v] to  existing PR %s : %s\n", entry.Reviewers, pullRequests[0].GetNumber(), err)
 			}
 			fmt.Printf("Added reviewers [%v] to PR %s\n", entry.Reviewers, pullRequests[0].GetHTMLURL())
 		}
