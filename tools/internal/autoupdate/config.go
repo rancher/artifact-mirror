@@ -217,8 +217,9 @@ func (entry ConfigEntry) Run(ctx context.Context, opts AutoUpdateOptions) error 
 	}
 	if len(pullRequests) == 1 {
 		if pullRequests[0].GetState() == "open" && len(pullRequests[0].RequestedReviewers) <= 1 && len(entry.Reviewers) > 0 { // only codeowner as reviewer
-			fmt.Printf("Reviewers are %v \n for PR: %s", entry.Reviewers, pullRequests[0].GetHTMLURL())
+			fmt.Printf("Reviewers are %v for PR: %s \n", entry.Reviewers, pullRequests[0].GetHTMLURL())
 			individualReviewers, teamReviewers := separateReviewers(entry.Reviewers)
+			fmt.Printf("IndividualReviewers: %s  \n TeamReviewers: %s \n", individualReviewers, teamReviewers)
 			_, _, err := opts.GithubClient.PullRequests.RequestReviewers(ctx, opts.GithubOwner, opts.GithubRepo, pullRequests[0].GetNumber(), github.ReviewersRequest{
 				Reviewers:     individualReviewers,
 				TeamReviewers: teamReviewers,
