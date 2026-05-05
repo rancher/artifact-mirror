@@ -2799,6 +2799,13 @@ Artifacts:
 - SourceArtifact: quay.io/minio/minio
   Tags:
   - RELEASE.2022-03-24T00-43-44Z
+- SourceArtifact: quay.io/ovirt/csi-driver
+  Tags:
+  - sha256:ed1f8ef1e23eef345f25e1e256a63ae36983fffd891ca7cc86ebb4c6b29f21fe
+  TargetArtifactName: mirrored-csi-driver
+  TargetRepositories:
+  - registry.suse.com/rancher/charts
+  - stgregistry.suse.com/rancher/charts
 - SourceArtifact: quay.io/prometheus-operator/admission-webhook
   Tags:
   - v0.72.0
@@ -3195,6 +3202,7 @@ Artifacts:
   - v3.3.0
   - v3.4.0
   - v3.5.0
+  - v4.10.0
   - v4.2.0
   - v4.3.0
   - v4.4.0
@@ -3213,6 +3221,7 @@ Artifacts:
   - v2.12.0
   - v2.13.0
   - v2.14.0
+  - v2.15.0
   - v2.3.0
   - v2.5.0
   - v2.5.1
@@ -3238,6 +3247,7 @@ Artifacts:
   - v5.1.0
   - v5.2.0
   - v5.3.0
+  - v6.0.0
 - SourceArtifact: registry.k8s.io/sig-storage/csi-resizer
   Tags:
   - v1.10.0
@@ -3245,6 +3255,7 @@ Artifacts:
   - v1.12.0
   - v1.13.1
   - v1.13.2
+  - v1.14.0
   - v1.3.0
   - v1.4.0
   - v1.6.0
@@ -3271,6 +3282,7 @@ Artifacts:
   - v2.14.0
   - v2.15.0
   - v2.16.0
+  - v2.17.0
   - v2.4.0
   - v2.6.0
   - v2.7.0

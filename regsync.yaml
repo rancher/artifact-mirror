@@ -19880,6 +19880,12 @@ sync:
 - source: quay.io/minio/minio:RELEASE.2022-03-24T00-43-44Z
   target: stgregistry.suse.com/rancher/mirrored-minio-minio:RELEASE.2022-03-24T00-43-44Z
   type: image
+- source: quay.io/ovirt/csi-driver@sha256:ed1f8ef1e23eef345f25e1e256a63ae36983fffd891ca7cc86ebb4c6b29f21fe
+  target: registry.suse.com/rancher/charts/mirrored-csi-driver:sha256-ed1f8ef1e23eef345f25e1e256a63ae36983fffd891ca7cc86ebb4c6b29f21fe
+  type: image
+- source: quay.io/ovirt/csi-driver@sha256:ed1f8ef1e23eef345f25e1e256a63ae36983fffd891ca7cc86ebb4c6b29f21fe
+  target: stgregistry.suse.com/rancher/charts/mirrored-csi-driver:sha256-ed1f8ef1e23eef345f25e1e256a63ae36983fffd891ca7cc86ebb4c6b29f21fe
+  type: image
 - source: quay.io/prometheus-operator/admission-webhook:v0.72.0
   target: docker.io/rancher/mirrored-prometheus-operator-admission-webhook:v0.72.0
   type: image
@@ -22394,6 +22400,9 @@ sync:
 - source: registry.k8s.io/sig-storage/csi-attacher:v3.5.0
   target: docker.io/rancher/mirrored-sig-storage-csi-attacher:v3.5.0
   type: image
+- source: registry.k8s.io/sig-storage/csi-attacher:v4.10.0
+  target: docker.io/rancher/mirrored-sig-storage-csi-attacher:v4.10.0
+  type: image
 - source: registry.k8s.io/sig-storage/csi-attacher:v4.2.0
   target: docker.io/rancher/mirrored-sig-storage-csi-attacher:v4.2.0
   type: image
@@ -22439,6 +22448,9 @@ sync:
 - source: registry.k8s.io/sig-storage/csi-attacher:v3.5.0
   target: registry.suse.com/rancher/mirrored-sig-storage-csi-attacher:v3.5.0
   type: image
+- source: registry.k8s.io/sig-storage/csi-attacher:v4.10.0
+  target: registry.suse.com/rancher/mirrored-sig-storage-csi-attacher:v4.10.0
+  type: image
 - source: registry.k8s.io/sig-storage/csi-attacher:v4.2.0
   target: registry.suse.com/rancher/mirrored-sig-storage-csi-attacher:v4.2.0
   type: image
@@ -22483,6 +22495,9 @@ sync:
   type: image
 - source: registry.k8s.io/sig-storage/csi-attacher:v3.5.0
   target: stgregistry.suse.com/rancher/mirrored-sig-storage-csi-attacher:v3.5.0
+  type: image
+- source: registry.k8s.io/sig-storage/csi-attacher:v4.10.0
+  target: stgregistry.suse.com/rancher/mirrored-sig-storage-csi-attacher:v4.10.0
   type: image
 - source: registry.k8s.io/sig-storage/csi-attacher:v4.2.0
   target: stgregistry.suse.com/rancher/mirrored-sig-storage-csi-attacher:v4.2.0
@@ -22532,6 +22547,9 @@ sync:
 - source: registry.k8s.io/sig-storage/csi-node-driver-registrar:v2.14.0
   target: docker.io/rancher/mirrored-sig-storage-csi-node-driver-registrar:v2.14.0
   type: image
+- source: registry.k8s.io/sig-storage/csi-node-driver-registrar:v2.15.0
+  target: docker.io/rancher/mirrored-sig-storage-csi-node-driver-registrar:v2.15.0
+  type: image
 - source: registry.k8s.io/sig-storage/csi-node-driver-registrar:v2.3.0
   target: docker.io/rancher/mirrored-sig-storage-csi-node-driver-registrar:v2.3.0
   type: image
@@ -22571,6 +22589,9 @@ sync:
 - source: registry.k8s.io/sig-storage/csi-node-driver-registrar:v2.14.0
   target: registry.suse.com/rancher/mirrored-sig-storage-csi-node-driver-registrar:v2.14.0
   type: image
+- source: registry.k8s.io/sig-storage/csi-node-driver-registrar:v2.15.0
+  target: registry.suse.com/rancher/mirrored-sig-storage-csi-node-driver-registrar:v2.15.0
+  type: image
 - source: registry.k8s.io/sig-storage/csi-node-driver-registrar:v2.3.0
   target: registry.suse.com/rancher/mirrored-sig-storage-csi-node-driver-registrar:v2.3.0
   type: image
@@ -22609,6 +22630,9 @@ sync:
   type: image
 - source: registry.k8s.io/sig-storage/csi-node-driver-registrar:v2.14.0
   target: stgregistry.suse.com/rancher/mirrored-sig-storage-csi-node-driver-registrar:v2.14.0
+  type: image
+- source: registry.k8s.io/sig-storage/csi-node-driver-registrar:v2.15.0
+  target: stgregistry.suse.com/rancher/mirrored-sig-storage-csi-node-driver-registrar:v2.15.0
   type: image
 - source: registry.k8s.io/sig-storage/csi-node-driver-registrar:v2.3.0
   target: stgregistry.suse.com/rancher/mirrored-sig-storage-csi-node-driver-registrar:v2.3.0
@@ -22679,6 +22703,9 @@ sync:
 - source: registry.k8s.io/sig-storage/csi-provisioner:v5.3.0
   target: docker.io/rancher/mirrored-sig-storage-csi-provisioner:v5.3.0
   type: image
+- source: registry.k8s.io/sig-storage/csi-provisioner:v6.0.0
+  target: docker.io/rancher/mirrored-sig-storage-csi-provisioner:v6.0.0
+  type: image
 - source: registry.k8s.io/sig-storage/csi-provisioner:v2.2.0
   target: registry.suse.com/rancher/mirrored-sig-storage-csi-provisioner:v2.2.0
   type: image
@@ -22723,6 +22750,9 @@ sync:
   type: image
 - source: registry.k8s.io/sig-storage/csi-provisioner:v5.3.0
   target: registry.suse.com/rancher/mirrored-sig-storage-csi-provisioner:v5.3.0
+  type: image
+- source: registry.k8s.io/sig-storage/csi-provisioner:v6.0.0
+  target: registry.suse.com/rancher/mirrored-sig-storage-csi-provisioner:v6.0.0
   type: image
 - source: registry.k8s.io/sig-storage/csi-provisioner:v2.2.0
   target: stgregistry.suse.com/rancher/mirrored-sig-storage-csi-provisioner:v2.2.0
@@ -22769,6 +22799,9 @@ sync:
 - source: registry.k8s.io/sig-storage/csi-provisioner:v5.3.0
   target: stgregistry.suse.com/rancher/mirrored-sig-storage-csi-provisioner:v5.3.0
   type: image
+- source: registry.k8s.io/sig-storage/csi-provisioner:v6.0.0
+  target: stgregistry.suse.com/rancher/mirrored-sig-storage-csi-provisioner:v6.0.0
+  type: image
 - source: registry.k8s.io/sig-storage/csi-resizer:v1.10.0
   target: docker.io/rancher/mirrored-sig-storage-csi-resizer:v1.10.0
   type: image
@@ -22783,6 +22816,9 @@ sync:
   type: image
 - source: registry.k8s.io/sig-storage/csi-resizer:v1.13.2
   target: docker.io/rancher/mirrored-sig-storage-csi-resizer:v1.13.2
+  type: image
+- source: registry.k8s.io/sig-storage/csi-resizer:v1.14.0
+  target: docker.io/rancher/mirrored-sig-storage-csi-resizer:v1.14.0
   type: image
 - source: registry.k8s.io/sig-storage/csi-resizer:v1.3.0
   target: docker.io/rancher/mirrored-sig-storage-csi-resizer:v1.3.0
@@ -22823,6 +22859,9 @@ sync:
 - source: registry.k8s.io/sig-storage/csi-resizer:v1.13.2
   target: registry.suse.com/rancher/mirrored-sig-storage-csi-resizer:v1.13.2
   type: image
+- source: registry.k8s.io/sig-storage/csi-resizer:v1.14.0
+  target: registry.suse.com/rancher/mirrored-sig-storage-csi-resizer:v1.14.0
+  type: image
 - source: registry.k8s.io/sig-storage/csi-resizer:v1.3.0
   target: registry.suse.com/rancher/mirrored-sig-storage-csi-resizer:v1.3.0
   type: image
@@ -22861,6 +22900,9 @@ sync:
   type: image
 - source: registry.k8s.io/sig-storage/csi-resizer:v1.13.2
   target: stgregistry.suse.com/rancher/mirrored-sig-storage-csi-resizer:v1.13.2
+  type: image
+- source: registry.k8s.io/sig-storage/csi-resizer:v1.14.0
+  target: stgregistry.suse.com/rancher/mirrored-sig-storage-csi-resizer:v1.14.0
   type: image
 - source: registry.k8s.io/sig-storage/csi-resizer:v1.3.0
   target: stgregistry.suse.com/rancher/mirrored-sig-storage-csi-resizer:v1.3.0
@@ -22976,6 +23018,9 @@ sync:
 - source: registry.k8s.io/sig-storage/livenessprobe:v2.16.0
   target: docker.io/rancher/mirrored-sig-storage-livenessprobe:v2.16.0
   type: image
+- source: registry.k8s.io/sig-storage/livenessprobe:v2.17.0
+  target: docker.io/rancher/mirrored-sig-storage-livenessprobe:v2.17.0
+  type: image
 - source: registry.k8s.io/sig-storage/livenessprobe:v2.4.0
   target: docker.io/rancher/mirrored-sig-storage-livenessprobe:v2.4.0
   type: image
@@ -23009,6 +23054,9 @@ sync:
 - source: registry.k8s.io/sig-storage/livenessprobe:v2.16.0
   target: registry.suse.com/rancher/mirrored-sig-storage-livenessprobe:v2.16.0
   type: image
+- source: registry.k8s.io/sig-storage/livenessprobe:v2.17.0
+  target: registry.suse.com/rancher/mirrored-sig-storage-livenessprobe:v2.17.0
+  type: image
 - source: registry.k8s.io/sig-storage/livenessprobe:v2.4.0
   target: registry.suse.com/rancher/mirrored-sig-storage-livenessprobe:v2.4.0
   type: image
@@ -23041,6 +23089,9 @@ sync:
   type: image
 - source: registry.k8s.io/sig-storage/livenessprobe:v2.16.0
   target: stgregistry.suse.com/rancher/mirrored-sig-storage-livenessprobe:v2.16.0
+  type: image
+- source: registry.k8s.io/sig-storage/livenessprobe:v2.17.0
+  target: stgregistry.suse.com/rancher/mirrored-sig-storage-livenessprobe:v2.17.0
   type: image
 - source: registry.k8s.io/sig-storage/livenessprobe:v2.4.0
   target: stgregistry.suse.com/rancher/mirrored-sig-storage-livenessprobe:v2.4.0
