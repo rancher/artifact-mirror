@@ -19881,10 +19881,10 @@ sync:
   target: stgregistry.suse.com/rancher/mirrored-minio-minio:RELEASE.2022-03-24T00-43-44Z
   type: image
 - source: quay.io/openshift/origin-ovirt-csi-driver:4.21.0
-  target: registry.suse.com/rancher/charts/mirrored-ovirt-csi-driver:4.21.0
+  target: registry.suse.com/rancher/mirrored-ovirt-csi-driver:4.21.0
   type: image
 - source: quay.io/openshift/origin-ovirt-csi-driver:4.21.0
-  target: stgregistry.suse.com/rancher/charts/mirrored-ovirt-csi-driver:4.21.0
+  target: stgregistry.suse.com/rancher/mirrored-ovirt-csi-driver:4.21.0
   type: image
 - source: quay.io/prometheus-operator/admission-webhook:v0.72.0
   target: docker.io/rancher/mirrored-prometheus-operator-admission-webhook:v0.72.0

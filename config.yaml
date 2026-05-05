@@ -2804,8 +2804,8 @@ Artifacts:
   - 4.21.0
   TargetArtifactName: mirrored-ovirt-csi-driver
   TargetRepositories:
-  - registry.suse.com/rancher/charts
-  - stgregistry.suse.com/rancher/charts
+  - registry.suse.com/rancher
+  - stgregistry.suse.com/rancher
 - SourceArtifact: quay.io/prometheus-operator/admission-webhook
   Tags:
   - v0.72.0
