@@ -2802,7 +2802,7 @@ Artifacts:
 - SourceArtifact: quay.io/ovirt/csi-driver
   Tags:
   - sha256:ed1f8ef1e23eef345f25e1e256a63ae36983fffd891ca7cc86ebb4c6b29f21fe
-  TargetArtifactName: mirrored-csi-driver
+  TargetArtifactName: mirrored-ovirt-csi-driver
   TargetRepositories:
   - registry.suse.com/rancher/charts
   - stgregistry.suse.com/rancher/charts
