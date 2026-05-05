@@ -2799,9 +2799,9 @@ Artifacts:
 - SourceArtifact: quay.io/minio/minio
   Tags:
   - RELEASE.2022-03-24T00-43-44Z
-- SourceArtifact: quay.io/ovirt/csi-driver
+- SourceArtifact: quay.io/openshift/origin-ovirt-csi-driver
   Tags:
-  - sha256:ed1f8ef1e23eef345f25e1e256a63ae36983fffd891ca7cc86ebb4c6b29f21fe
+  - 4.21.0
   TargetArtifactName: mirrored-ovirt-csi-driver
   TargetRepositories:
   - registry.suse.com/rancher/charts
