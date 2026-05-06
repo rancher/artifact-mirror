@@ -2801,6 +2801,7 @@ Artifacts:
   - RELEASE.2022-03-24T00-43-44Z
 - SourceArtifact: quay.io/openshift/origin-ovirt-csi-driver
   Tags:
+  - 4.15.0
   - 4.21.0
   TargetArtifactName: mirrored-ovirt-csi-driver
   TargetRepositories:

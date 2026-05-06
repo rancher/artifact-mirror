@@ -19880,8 +19880,14 @@ sync:
 - source: quay.io/minio/minio:RELEASE.2022-03-24T00-43-44Z
   target: stgregistry.suse.com/rancher/mirrored-minio-minio:RELEASE.2022-03-24T00-43-44Z
   type: image
+- source: quay.io/openshift/origin-ovirt-csi-driver:4.15.0
+  target: registry.suse.com/rancher/mirrored-ovirt-csi-driver:4.15.0
+  type: image
 - source: quay.io/openshift/origin-ovirt-csi-driver:4.21.0
   target: registry.suse.com/rancher/mirrored-ovirt-csi-driver:4.21.0
+  type: image
+- source: quay.io/openshift/origin-ovirt-csi-driver:4.15.0
+  target: stgregistry.suse.com/rancher/mirrored-ovirt-csi-driver:4.15.0
   type: image
 - source: quay.io/openshift/origin-ovirt-csi-driver:4.21.0
   target: stgregistry.suse.com/rancher/mirrored-ovirt-csi-driver:4.21.0
