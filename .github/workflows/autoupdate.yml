@@ -45,7 +45,7 @@ jobs:
       run: scripts/build-tools.sh
 
     - name: Run autoupdate
-      run: bin/artifact-mirror-tools autoupdate
+      run: bin/artifact-mirror-tools autoupdate --dry-run
       env:
         GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
         APPCO_USERNAME: ${{ env.APPCO_USERNAME }}
