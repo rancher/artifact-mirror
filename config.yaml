@@ -120,6 +120,7 @@ Artifacts:
   - 0.30.0-12.15
   - 0.30.0-12.16
   - 0.31.1-15.2
+  - 0.32.1-17.3
 - SourceArtifact: dp.apps.rancher.io/containers/curl
   Tags:
   - 8.14.1-6.1
