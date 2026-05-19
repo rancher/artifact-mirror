@@ -177,6 +177,7 @@ Artifacts:
   - 1.10.2-11.21
   - 1.10.2-14.3
   - 1.11.0-14.4
+  - 1.11.1-16.2
   - 1.9.1-11.3
 - SourceArtifact: dp.apps.rancher.io/containers/redis
   Tags:
