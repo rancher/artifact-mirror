@@ -3112,6 +3112,7 @@ Artifacts:
   - v3.5.0
   - v3.6.0
   - v3.7.0
+  - v3.7.1
   TargetArtifactName: mirrored-cloud-provider-vsphere-csi-release-syncer
 - SourceArtifact: registry.k8s.io/dns/k8s-dns-dnsmasq-nanny
   Tags:
