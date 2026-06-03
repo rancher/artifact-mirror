@@ -165,7 +165,7 @@ jobs:
           timeout: "5m"
 
       - name: Push patched image to the Prime registry
-        if: steps.copa.conclusion == 'success'
+        if: steps.evaluate.outputs.should_patch == 'true' && steps.copa.conclusion == 'success'
         run: |
           set -euo pipefail
           # copa-action loads the patched image into the local Docker daemon and
