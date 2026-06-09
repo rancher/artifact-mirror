@@ -205,6 +205,7 @@ Artifacts:
   - 0.40.1-8.1
   - 0.41.0-12.2
   - 0.41.0-12.3
+  - 0.41.0-13.1
 - SourceArtifact: flannel/flannel
   Tags:
   - v0.21.2
