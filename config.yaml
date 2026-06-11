@@ -1012,6 +1012,7 @@ Artifacts:
   - 3.6.9
   - 3.7.1
   - 3.7.4
+  - 3.7.5
 - SourceArtifact: longhornio/backing-image-manager
   Tags:
   - v1_20210422
