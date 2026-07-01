@@ -3539,6 +3539,7 @@ Artifacts:
   - v0.57.1
   - v0.57.2
   - v0.57.3
+  - v0.57.5
 - SourceArtifact: sonobuoy/sonobuoy
   Tags:
   - v0.19.0
