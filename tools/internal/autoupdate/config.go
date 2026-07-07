@@ -247,18 +247,19 @@ func (entry ConfigEntry) Run(ctx context.Context, opts AutoUpdateOptions) error 
 			}
 		}
 		fmt.Print(msg)
-		return nil
 	}
 
-	return entry.CreateArtifactUpdatePullRequest(ctx, opts, branchName, artifactsToUpdate)
+	return entry.CreateArtifactUpdatePullRequest(ctx, opts, branchName, artifactsToUpdate, opts.DryRun)
 }
 
-func (entry ConfigEntry) CreateArtifactUpdatePullRequest(ctx context.Context, opts AutoUpdateOptions, branchName string, artifactsToUpdate []*config.Artifact) error {
+func (entry ConfigEntry) CreateArtifactUpdatePullRequest(ctx context.Context, opts AutoUpdateOptions, branchName string, artifactsToUpdate []*config.Artifact, dryRun bool) error {
 	accumulator := config.NewArtifactAccumulator()
 	accumulator.AddArtifacts(opts.ConfigYaml.Artifacts...)
 
-	if err := git.CreateAndCheckoutBranch(opts.BaseBranch, branchName); err != nil {
-		return fmt.Errorf("failed to create and checkout branch %s: %w", branchName, err)
+	if !dryRun {
+		if err := git.CreateAndCheckoutBranch(opts.BaseBranch, branchName); err != nil {
+			return fmt.Errorf("failed to create and checkout branch %s: %w", branchName, err)
+		}
 	}
 	for _, artifactToUpdate := range artifactsToUpdate {
 		// We can reuse the accumulator here because we are making a sequence
@@ -280,12 +281,16 @@ func (entry ConfigEntry) CreateArtifactUpdatePullRequest(ctx context.Context, op
 
 		tagString := strings.Join(artifactToUpdate.Tags, ", ")
 		msg := fmt.Sprintf("Add tag(s) %s for artifact %s", tagString, artifactToUpdate.SourceArtifact)
-		if err := git.Commit(msg); err != nil {
-			return fmt.Errorf("failed to commit changes for artifact %s: %w", artifactToUpdate.SourceArtifact, err)
+		if !dryRun {
+			if err := git.Commit(msg); err != nil {
+				return fmt.Errorf("failed to commit changes for artifact %s: %w", artifactToUpdate.SourceArtifact, err)
+			}
 		}
 	}
-	if err := git.PushBranch(branchName, "origin"); err != nil {
-		return fmt.Errorf("failed to push branch %s: %w", branchName, err)
+	if !dryRun {
+		if err := git.PushBranch(branchName, "origin"); err != nil {
+			return fmt.Errorf("failed to push branch %s: %w", branchName, err)
+		}
 	}
 
 	tagCount := 0
@@ -298,6 +303,14 @@ func (entry ConfigEntry) CreateArtifactUpdatePullRequest(ctx context.Context, op
 		for _, fullArtifact := range artifactToUpdate.CombineSourceArtifactAndTags() {
 			body = body + "\n- `" + fullArtifact + "`"
 		}
+	}
+	if dryRun {
+		fmt.Println("=================================")
+		fmt.Println("Pull Request Body")
+		fmt.Println("---------------------------------")
+		fmt.Println(body)
+		fmt.Println("=================================")
+		return nil
 	}
 	maintainerCanModify := true
 	newPullRequest := &github.NewPullRequest{

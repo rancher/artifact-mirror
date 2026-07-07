@@ -153,13 +153,11 @@ func autoUpdate(ctx context.Context, _ *cli.Command) error {
 	}
 
 	ghClient := github.NewClient(nil)
-	if !dryRun {
-		githubToken := os.Getenv("GITHUB_TOKEN")
-		if githubToken == "" {
-			return errors.New("must define GITHUB_TOKEN")
-		}
-		ghClient = ghClient.WithAuthToken(githubToken)
+	githubToken := os.Getenv("GITHUB_TOKEN")
+	if githubToken == "" {
+		return errors.New("must define GITHUB_TOKEN")
 	}
+	ghClient = ghClient.WithAuthToken(githubToken)
 
 	value := os.Getenv("GITHUB_REPOSITORY")
 	if value == "" {
