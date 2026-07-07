@@ -1,0 +1,8 @@
+- Name: appco-clamav
+  Registry:
+    Artifacts:
+    - SourceArtifact: dp.apps.rancher.io/containers/clamav
+    Latest: true
+    VersionFilter: ^1.4(.+)$
+  Reviewers:
+  - rancher/orbs
