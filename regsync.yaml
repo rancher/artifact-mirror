@@ -20,3 +20,12 @@ creds:
 defaults:
   userAgent: rancher-artifact-mirror
 sync:
+- source: dp.apps.rancher.io/containers/clamav:1.4.4-11.2
+  target: docker.io/rancher/appco-clamav:1.4.4-11.2
+  type: image
+- source: dp.apps.rancher.io/containers/clamav:1.4.4-11.2
+  target: registry.suse.com/rancher/appco-clamav:1.4.4-11.2
+  type: image
+- source: dp.apps.rancher.io/containers/clamav:1.4.4-11.2
+  target: stgregistry.suse.com/rancher/appco-clamav:1.4.4-11.2
+  type: image
