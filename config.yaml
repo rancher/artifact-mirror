@@ -2,6 +2,7 @@ Artifacts:
 - SourceArtifact: dp.apps.rancher.io/containers/clamav
   Tags:
   - 1.4.4-11.2
+  - 1.4.5-11.5
 Repositories:
 - BaseUrl: docker.io/rancher
   DefaultTarget: true
