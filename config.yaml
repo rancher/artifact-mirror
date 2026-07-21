@@ -619,6 +619,7 @@ Artifacts:
   - v4.0.15
   - v4.0.5
   - v5.1.0
+  - v5.10.1
   - v5.8.3
 - SourceArtifact: idealista/prom2teams
   Tags:

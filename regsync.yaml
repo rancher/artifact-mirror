@@ -3041,6 +3041,9 @@ sync:
 - source: grafana/grafana-image-renderer:v5.1.0
   target: docker.io/rancher/mirrored-grafana-grafana-image-renderer:v5.1.0
   type: image
+- source: grafana/grafana-image-renderer:v5.10.1
+  target: docker.io/rancher/mirrored-grafana-grafana-image-renderer:v5.10.1
+  type: image
 - source: grafana/grafana-image-renderer:v5.8.3
   target: docker.io/rancher/mirrored-grafana-grafana-image-renderer:v5.8.3
   type: image
@@ -3080,6 +3083,9 @@ sync:
 - source: grafana/grafana-image-renderer:v5.1.0
   target: registry.suse.com/rancher/mirrored-grafana-grafana-image-renderer:v5.1.0
   type: image
+- source: grafana/grafana-image-renderer:v5.10.1
+  target: registry.suse.com/rancher/mirrored-grafana-grafana-image-renderer:v5.10.1
+  type: image
 - source: grafana/grafana-image-renderer:v5.8.3
   target: registry.suse.com/rancher/mirrored-grafana-grafana-image-renderer:v5.8.3
   type: image
@@ -3118,6 +3124,9 @@ sync:
   type: image
 - source: grafana/grafana-image-renderer:v5.1.0
   target: stgregistry.suse.com/rancher/mirrored-grafana-grafana-image-renderer:v5.1.0
+  type: image
+- source: grafana/grafana-image-renderer:v5.10.1
+  target: stgregistry.suse.com/rancher/mirrored-grafana-grafana-image-renderer:v5.10.1
   type: image
 - source: grafana/grafana-image-renderer:v5.8.3
   target: stgregistry.suse.com/rancher/mirrored-grafana-grafana-image-renderer:v5.8.3
