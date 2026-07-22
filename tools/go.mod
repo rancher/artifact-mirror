@@ -1,12 +1,12 @@
 module github.com/rancher/artifact-mirror
 
-go 1.24.4
+go 1.25.0
 
 replace gopkg.in/yaml.v3 => go.yaml.in/yaml/v3 v3.0.1
 
 require (
 	github.com/Masterminds/semver/v3 v3.4.0
-	github.com/google/go-github/v80 v80.0.0
+	github.com/google/go-github/v89 v89.0.0
 	github.com/maruel/natural v1.3.0
 	github.com/migueleliasweb/go-github-mock v1.5.0
 	github.com/stretchr/testify v1.11.1
@@ -19,7 +19,7 @@ require (
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/google/go-github/v73 v73.0.0 // indirect
-	github.com/google/go-querystring v1.1.0 // indirect
+	github.com/google/go-querystring v1.2.0 // indirect
 	github.com/gorilla/mux v1.8.1 // indirect
 	github.com/kr/pretty v0.3.1 // indirect
 	github.com/opencontainers/go-digest v1.0.0 // indirect
