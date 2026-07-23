@@ -577,6 +577,10 @@ Artifacts:
   - 0.31.3
   - 0.31.6
   TargetArtifactName: mirrored-prometheus-windows-exporter
+- SourceArtifact: ghcr.io/rmoioliveira/rebuild-grafana-image-renderer
+  Tags:
+  - v5.10.1-1
+  TargetArtifactName: mirrored-grafana-grafana-image-renderer
 - SourceArtifact: grafana/grafana
   Tags:
   - 7.1.5
