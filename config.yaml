@@ -581,6 +581,7 @@ Artifacts:
 - SourceArtifact: ghcr.io/rmoioliveira/rebuild-grafana-image-renderer
   Tags:
   - v5.10.1-1
+  - v5.10.1-2
   TargetArtifactName: mirrored-grafana-grafana-image-renderer
 - SourceArtifact: grafana/grafana
   Tags:
