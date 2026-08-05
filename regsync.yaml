@@ -2837,11 +2837,20 @@ sync:
 - source: ghcr.io/rmoioliveira/rebuild-grafana-image-renderer:v5.10.1-1
   target: docker.io/rancher/mirrored-grafana-grafana-image-renderer:v5.10.1-1
   type: image
+- source: ghcr.io/rmoioliveira/rebuild-grafana-image-renderer:v5.10.1-2
+  target: docker.io/rancher/mirrored-grafana-grafana-image-renderer:v5.10.1-2
+  type: image
 - source: ghcr.io/rmoioliveira/rebuild-grafana-image-renderer:v5.10.1-1
   target: registry.suse.com/rancher/mirrored-grafana-grafana-image-renderer:v5.10.1-1
   type: image
+- source: ghcr.io/rmoioliveira/rebuild-grafana-image-renderer:v5.10.1-2
+  target: registry.suse.com/rancher/mirrored-grafana-grafana-image-renderer:v5.10.1-2
+  type: image
 - source: ghcr.io/rmoioliveira/rebuild-grafana-image-renderer:v5.10.1-1
   target: stgregistry.suse.com/rancher/mirrored-grafana-grafana-image-renderer:v5.10.1-1
+  type: image
+- source: ghcr.io/rmoioliveira/rebuild-grafana-image-renderer:v5.10.1-2
+  target: stgregistry.suse.com/rancher/mirrored-grafana-grafana-image-renderer:v5.10.1-2
   type: image
 - source: grafana/grafana:7.1.5
   target: docker.io/rancher/grafana-grafana:7.1.5
