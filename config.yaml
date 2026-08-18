@@ -2353,6 +2353,7 @@ Artifacts:
   - v0.4.5
   - v0.4.6
   - v0.4.8
+  - v0.4.9
 - SourceArtifact: quay.io/cilium/cilium
   Tags:
   - v1.10.4
@@ -2412,6 +2413,7 @@ Artifacts:
   - v1.19.5
   - v1.19.6
   - v1.20.0
+  - v1.20.1
   - v1.9.12
   - v1.9.4
   - v1.9.6
@@ -2458,6 +2460,7 @@ Artifacts:
   - v1.36.8-1781157951-a7f42a3390781539911b5b9107881b35ecc4e752
   - v1.36.9-1782267392-edeb3f2af56c37c407efa1f63f0b32f595399bbc
   - v1.37.5-1782911245-7cffc778c923f68a77954a53b1a98d6b5353f004
+  - v1.37.5-1786810558-766ccfb37260a43e9d228837aa84ce3faf9f64e7
 - SourceArtifact: quay.io/cilium/cilium-etcd-operator
   Tags:
   - v2.0.7
@@ -2510,6 +2513,7 @@ Artifacts:
   - v1.19.5
   - v1.19.6
   - v1.20.0
+  - v1.20.1
 - SourceArtifact: quay.io/cilium/hubble-relay
   Tags:
   - v1.12.4
@@ -2559,6 +2563,7 @@ Artifacts:
   - v1.19.5
   - v1.19.6
   - v1.20.0
+  - v1.20.1
 - SourceArtifact: quay.io/cilium/hubble-ui
   Tags:
   - v0.10.0
@@ -2652,6 +2657,7 @@ Artifacts:
   - v1.19.5
   - v1.19.6
   - v1.20.0
+  - v1.20.1
   - v1.9.12
   - v1.9.4
   - v1.9.6
@@ -2715,6 +2721,7 @@ Artifacts:
   - v1.19.5
   - v1.19.6
   - v1.20.0
+  - v1.20.1
   - v1.9.12
   - v1.9.4
   - v1.9.6
@@ -2778,6 +2785,7 @@ Artifacts:
   - v1.19.5
   - v1.19.6
   - v1.20.0
+  - v1.20.1
   - v1.9.12
   - v1.9.4
   - v1.9.6
