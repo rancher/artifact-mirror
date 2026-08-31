@@ -1,6 +1,7 @@
 package autoupdate
 
 import (
+	"bytes"
 	"encoding/base64"
 	"encoding/json"
 	"fmt"
@@ -62,8 +63,13 @@ func (d DockerHub) getArtifactTags() ([]string, error) {
 	var allTags []string
 	page := 1
 
+	token, err := d.getDockerAuthToken()
+	if err != nil {
+		return nil, fmt.Errorf("failed to create token: %w", err)
+	}
+
 	for {
-		tags, hasNext, err := d.fetchPage(page)
+		tags, hasNext, err := d.fetchPage(page, token)
 		if err != nil {
 			return nil, err
 		}
@@ -78,7 +84,7 @@ func (d DockerHub) getArtifactTags() ([]string, error) {
 	return allTags, nil
 }
 
-func (d DockerHub) fetchPage(page int) ([]string, bool, error) {
+func (d DockerHub) fetchPage(page int, token string) ([]string, bool, error) {
 	params := url.Values{}
 	params.Add("page", strconv.Itoa(page))
 	params.Add("page_size", "100")
@@ -87,6 +93,7 @@ func (d DockerHub) fetchPage(page int) ([]string, bool, error) {
 	if err != nil {
 		return nil, false, fmt.Errorf("failed to create request: %w", err)
 	}
+	req.Header.Set("Authorization", "Bearer "+token)
 	req.URL.RawQuery = params.Encode()
 	resp, err := doRequestWithRetries(req)
 	if err != nil {
@@ -107,6 +114,38 @@ func (d DockerHub) fetchPage(page int) ([]string, bool, error) {
 		tags[i] = tag.Name
 	}
 	return tags, data.Next != "", nil
+}
+
+func (d DockerHub) getDockerAuthToken() (string, error) {
+	dockerUsername := os.Getenv("DOCKER_USERNAME")
+	dockerPassword := os.Getenv("DOCKER_PASSWORD")
+
+	// https://docs.docker.com/reference/api/hub/latest/#tag/authentication-api/operation/AuthCreateAccessToken
+	reqBody, err := json.Marshal(map[string]string{
+		"identifier": dockerUsername,
+		"secret":     dockerPassword,
+	})
+	if err != nil {
+		return "", fmt.Errorf("failed to marshal getDockerAuthToken body req: %w", err)
+	}
+
+	const tokenURL = "https://hub.docker.com/v2/auth/token"
+	req, err := http.NewRequest(http.MethodPost, tokenURL, bytes.NewBuffer(reqBody))
+	if err != nil {
+		return "", fmt.Errorf("failed to create getDockerAuthToken http req: %w", err)
+	}
+	resp, err := doRequestWithRetries(req)
+	if err != nil {
+		return "", fmt.Errorf("docker token request failed: %w", err)
+	}
+	defer resp.Body.Close()
+
+	var tokenData DockerTokenResponse
+	err = json.NewDecoder(resp.Body).Decode(&tokenData)
+	if err != nil {
+		return "", fmt.Errorf("failed to decode docker json response: %w", err)
+	}
+	return tokenData.AccessToken, nil
 }
 
 type QuayIO struct {
@@ -353,6 +392,10 @@ type QuayResponse struct {
 }
 
 type SuseTokenResponse struct {
+	AccessToken string `json:"access_token"`
+}
+
+type DockerTokenResponse struct {
 	AccessToken string `json:"access_token"`
 }
 
