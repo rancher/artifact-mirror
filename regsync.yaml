@@ -2141,6 +2141,24 @@ sync:
 - source: gcr.io/google_containers/pause:3.2
   target: stgregistry.suse.com/rancher/mirrored-pause:3.2
   type: image
+- source: ghcr.io/alemorcuq/fluent-bit:3.1.8-rebuild.1
+  target: docker.io/rancher/mirrored-fluent-fluent-bit:3.1.8-rebuild.1
+  type: image
+- source: ghcr.io/alemorcuq/fluent-bit:3.1.8-rebuild.1-debug
+  target: docker.io/rancher/mirrored-fluent-fluent-bit:3.1.8-rebuild.1-debug
+  type: image
+- source: ghcr.io/alemorcuq/fluent-bit:3.1.8-rebuild.1
+  target: registry.suse.com/rancher/mirrored-fluent-fluent-bit:3.1.8-rebuild.1
+  type: image
+- source: ghcr.io/alemorcuq/fluent-bit:3.1.8-rebuild.1-debug
+  target: registry.suse.com/rancher/mirrored-fluent-fluent-bit:3.1.8-rebuild.1-debug
+  type: image
+- source: ghcr.io/alemorcuq/fluent-bit:3.1.8-rebuild.1
+  target: stgregistry.suse.com/rancher/mirrored-fluent-fluent-bit:3.1.8-rebuild.1
+  type: image
+- source: ghcr.io/alemorcuq/fluent-bit:3.1.8-rebuild.1-debug
+  target: stgregistry.suse.com/rancher/mirrored-fluent-fluent-bit:3.1.8-rebuild.1-debug
+  type: image
 - source: ghcr.io/banzaicloud/fluentd:v1.12.4-alpine-1
   target: docker.io/rancher/mirrored-banzaicloud-fluentd:v1.12.4-alpine-1
   type: image

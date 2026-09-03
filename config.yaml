@@ -477,6 +477,11 @@ Artifacts:
   - v0.15.0
   - v0.5.0
   TargetArtifactName: mirrored-kube-rbac-proxy
+- SourceArtifact: ghcr.io/alemorcuq/fluent-bit
+  Tags:
+  - 3.1.8-rebuild.1
+  - 3.1.8-rebuild.1-debug
+  TargetArtifactName: mirrored-fluent-fluent-bit
 - SourceArtifact: ghcr.io/banzaicloud/fluentd
   Tags:
   - v1.12.4-alpine-1
