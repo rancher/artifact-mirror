@@ -10,7 +10,7 @@ require (
 	github.com/maruel/natural v1.3.0
 	github.com/migueleliasweb/go-github-mock v1.5.0
 	github.com/stretchr/testify v1.11.1
-	github.com/urfave/cli/v3 v3.10.0
+	github.com/urfave/cli/v3 v3.11.0
 	go.yaml.in/yaml/v3 v3.0.3
 	oras.land/oras-go/v2 v2.6.0
 	sigs.k8s.io/yaml v1.6.0
