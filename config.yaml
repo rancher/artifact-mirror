@@ -203,6 +203,7 @@ Artifacts:
   - 1.35.0-5.2
   - 1.35.0-5.3
   - 1.35.0-6.1
+  - 1.35.0-6.2
   TargetRepositories:
   - registry.suse.com/rancher
   - stgregistry.suse.com/rancher
