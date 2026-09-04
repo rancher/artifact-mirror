@@ -407,6 +407,12 @@ func validateDockerHubRepoExists(errs *[]error, newConfigYaml *config.Config) {
 }
 
 func fetchDockerHubRepositories() (map[string]struct{}, error) {
+	d := autoupdate.DockerHub{}
+	token, err := d.GetDockerAuthToken()
+	if err != nil {
+		return nil, fmt.Errorf("failed to create token: %w", err)
+	}
+
 	type DockerAPIResponseRepository struct {
 		Name string `json:"name"`
 	}
@@ -425,6 +431,7 @@ func fetchDockerHubRepositories() (map[string]struct{}, error) {
 		if err != nil {
 			return nil, fmt.Errorf("failed to create request: %w", err)
 		}
+		req.Header.Set("Authorization", "Bearer "+token)
 		resp, err := client.Do(req)
 		if err != nil {
 			return nil, fmt.Errorf("request failed: %w", err)
