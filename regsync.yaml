@@ -19631,6 +19631,9 @@ sync:
 - source: quay.io/cilium/operator-azure:v1.20.1
   target: docker.io/rancher/mirrored-cilium-operator-azure:v1.20.1
   type: image
+- source: quay.io/cilium/operator-azure:v1.20.2
+  target: docker.io/rancher/mirrored-cilium-operator-azure:v1.20.2
+  type: image
 - source: quay.io/cilium/operator-azure:v1.9.12
   target: docker.io/rancher/mirrored-cilium-operator-azure:v1.9.12
   type: image
@@ -19817,6 +19820,9 @@ sync:
 - source: quay.io/cilium/operator-azure:v1.20.1
   target: registry.suse.com/rancher/mirrored-cilium-operator-azure:v1.20.1
   type: image
+- source: quay.io/cilium/operator-azure:v1.20.2
+  target: registry.suse.com/rancher/mirrored-cilium-operator-azure:v1.20.2
+  type: image
 - source: quay.io/cilium/operator-azure:v1.9.12
   target: registry.suse.com/rancher/mirrored-cilium-operator-azure:v1.9.12
   type: image
@@ -20002,6 +20008,9 @@ sync:
   type: image
 - source: quay.io/cilium/operator-azure:v1.20.1
   target: stgregistry.suse.com/rancher/mirrored-cilium-operator-azure:v1.20.1
+  type: image
+- source: quay.io/cilium/operator-azure:v1.20.2
+  target: stgregistry.suse.com/rancher/mirrored-cilium-operator-azure:v1.20.2
   type: image
 - source: quay.io/cilium/operator-azure:v1.9.12
   target: stgregistry.suse.com/rancher/mirrored-cilium-operator-azure:v1.9.12
