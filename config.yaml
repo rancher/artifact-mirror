@@ -2498,6 +2498,7 @@ Artifacts:
   - v1.36.9-1782267392-edeb3f2af56c37c407efa1f63f0b32f595399bbc
   - v1.37.5-1782911245-7cffc778c923f68a77954a53b1a98d6b5353f004
   - v1.37.5-1786810558-766ccfb37260a43e9d228837aa84ce3faf9f64e7
+  - v1.37.6-1789133542-cbec91f666af0bf742da986d43832932dbb26b82
 - SourceArtifact: quay.io/cilium/cilium-etcd-operator
   Tags:
   - v2.0.7
