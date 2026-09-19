@@ -1,0 +1,175 @@
+# Proof of Concept: automatically patch mirrored alpine/ubuntu based images.
+#
+# Each day this workflow:
+#   1. Resolves the latest mirrored "patch" we have available for each target
+#      image (the base tag, or its highest existing `-patchedN` revision).
+#   2. Runs a Trivy scan against that image, looking only for base OS package
+#      CVEs at HIGH or CRITICAL severity that have a fix available.
+#   3. If no fixable CVEs are found, it does nothing.
+#   4. If fixable CVEs are found, it runs the Copacetic action
+#      (project-copacetic/copa-action) to build a patched image and pushes it to
+#      the Rancher Prime registry only, using a `-patchedN` suffix where N is
+#      incremented each time the image is patched.
+#
+# This is intentionally scoped as a PoC: the list of images to patch is hard
+# coded in the matrix below. A follow up could discover candidate images
+# automatically from config.yaml / the registry.
+name: Patch Mirrored Images (PoC)
+
+on:
+  schedule:
+    # Daily, after the daily mirror jobs (which run at 02:00) have completed.
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+    inputs:
+      debug:
+        description: "Enable debug logging"
+        required: false
+        type: boolean
+
+permissions:
+  contents: read
+
+env:
+  # Mirrored images are pushed to the Prime registry under this namespace.
+  PRIME_REGISTRY: registry.suse.com
+  PRIME_NAMESPACE: rancher
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    strategy:
+      # One image failing should not stop the others from being patched.
+      fail-fast: false
+      matrix:
+        include:
+          # `image` is the repository under <PRIME_REGISTRY>/<PRIME_NAMESPACE>.
+          # `tag` is the base mirrored tag whose patch lineage we maintain.
+          - image: mirrored-library-nginx
+            tag: 1.29.8-alpine
+    steps:
+      - name: Checkout
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
+
+      - name: Read secrets into environment
+        uses: rancher-eio/read-vault-secrets@0da85151ad1f19ed7986c41587e45aac1ace74b6 # v3
+        with:
+          secrets: |
+            secret/data/github/repo/${{ github.repository }}/rancher-prime-registry/credentials username | PRIME_USERNAME ;
+            secret/data/github/repo/${{ github.repository }}/rancher-prime-registry/credentials password | PRIME_PASSWORD
+
+      - name: Install regctl
+        run: |
+          REGCTL_CHECKSUM=b4f352d3acbe5cd3d2255ebac618a0f8da80b72f16ec30182275cb891f5e6ee5
+          curl --silent --fail --location --output regctl https://github.com/regclient/regclient/releases/download/v0.8.3/regctl-linux-amd64
+          echo "${REGCTL_CHECKSUM}  regctl" | sha256sum -c -
+          chmod +x regctl
+          sudo mv regctl /usr/local/bin/regctl
+
+      - name: Log in to the Prime registry
+        run: |
+          echo "${PRIME_PASSWORD}" | regctl registry login "${PRIME_REGISTRY}" \
+            --user "${PRIME_USERNAME}" --pass-stdin
+          echo "${PRIME_PASSWORD}" | docker login "${PRIME_REGISTRY}" \
+            --username "${PRIME_USERNAME}" --password-stdin
+
+      - name: Resolve latest patched tag
+        id: resolve
+        env:
+          BASE_TAG: ${{ matrix.tag }}
+          IMAGE: ${{ matrix.image }}
+        run: |
+          set -euo pipefail
+          repo="${PRIME_REGISTRY}/${PRIME_NAMESPACE}/${IMAGE}"
+
+          # List all tags for the repo and keep only the ones belonging to this
+          # base tag's patch lineage: "<BASE_TAG>" or "<BASE_TAG>-patchedN".
+          tags="$(regctl tag ls "${repo}")"
+          pattern="^${BASE_TAG}(-patched[0-9]+)?$"
+
+          highest=0
+          while IFS= read -r tag; do
+            [ -z "${tag}" ] && continue
+            if [[ "${tag}" =~ ^${BASE_TAG}-patched([0-9]+)$ ]]; then
+              n="${BASH_REMATCH[1]}"
+              if (( n > highest )); then
+                highest="${n}"
+              fi
+            fi
+          done < <(printf '%s\n' "${tags}" | grep -E "${pattern}" || true)
+
+          if (( highest > 0 )); then
+            scan_tag="${BASE_TAG}-patched${highest}"
+          else
+            scan_tag="${BASE_TAG}"
+          fi
+          next=$(( highest + 1 ))
+          patched_tag="${BASE_TAG}-patched${next}"
+
+          echo "scan_ref=${repo}:${scan_tag}" >> "$GITHUB_OUTPUT"
+          echo "patched_tag=${patched_tag}" >> "$GITHUB_OUTPUT"
+          echo "Scanning ${repo}:${scan_tag}; next patched tag would be ${patched_tag}"
+
+      - name: Generate Trivy report
+        env:
+          # Authenticate Trivy against the Prime registry.
+          TRIVY_USERNAME: ${{ env.PRIME_USERNAME }}
+          TRIVY_PASSWORD: ${{ env.PRIME_PASSWORD }}
+        uses: aquasecurity/trivy-action@ed142fd0673e97e23eac54620cfb913e5ce36c25 # v0.36.0
+        with:
+          scan-type: "image"
+          image-ref: ${{ steps.resolve.outputs.scan_ref }}
+          format: "json"
+          output: "report.json"
+          # Only consider fixable, OS-level CVEs at HIGH or CRITICAL severity.
+          ignore-unfixed: true
+          vuln-type: "os"
+          severity: "HIGH,CRITICAL"
+          scanners: "vuln"
+
+      - name: Evaluate scan results
+        id: evaluate
+        run: |
+          set -euo pipefail
+          report="report.json"
+
+          # Copa can only patch alpine/debian/ubuntu style OS package managers.
+          # The PoC is scoped to alpine and ubuntu base images.
+          os_family="$(jq -r '.Metadata.OS.Family // ""' "${report}")"
+          vuln_count="$(jq '[.Results[]? | select(.Class=="os-pkgs") | .Vulnerabilities[]?] | length' "${report}")"
+
+          echo "Detected OS family: ${os_family:-unknown}"
+          echo "Fixable HIGH/CRITICAL OS CVEs: ${vuln_count}"
+
+          should_patch=false
+          if [[ "${os_family}" != "alpine" && "${os_family}" != "ubuntu" ]]; then
+            echo "::notice::Base image is not alpine or ubuntu (got '${os_family}'); skipping."
+          elif [[ "${vuln_count}" == "0" ]]; then
+            echo "::notice::No fixable HIGH/CRITICAL OS CVEs found; nothing to do."
+          else
+            should_patch=true
+          fi
+          echo "should_patch=${should_patch}" >> "$GITHUB_OUTPUT"
+
+      - name: Run Copa action
+        id: copa
+        if: steps.evaluate.outputs.should_patch == 'true'
+        uses: project-copacetic/copa-action@3843e22efdca421adb37aa8dec103a0f1db68544 # v1.2.1
+        with:
+          image: ${{ steps.resolve.outputs.scan_ref }}
+          image-report: "report.json"
+          patched-tag: ${{ steps.resolve.outputs.patched_tag }}
+          timeout: "5m"
+
+      - name: Push patched image to the Prime registry
+        if: steps.evaluate.outputs.should_patch == 'true' && steps.copa.conclusion == 'success'
+        run: |
+          set -euo pipefail
+          # copa-action loads the patched image into the local Docker daemon and
+          # exposes its reference via the `patched-image` output. Push it to the
+          # Prime registry only (it is already tagged with the -patchedN suffix).
+          docker push "${{ steps.copa.outputs.patched-image }}"
+          echo "::notice::Pushed patched image ${{ steps.copa.outputs.patched-image }}"
