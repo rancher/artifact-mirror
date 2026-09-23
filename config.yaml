@@ -110,6 +110,7 @@ Artifacts:
   - 9.57.0-7.1
   - 9.57.0-8.1
   - 9.57.0-9.1
+  - 9.59.0
   TargetRepositories:
   - registry.suse.com/rancher/charts
   - stgregistry.suse.com/rancher/charts
@@ -204,11 +205,15 @@ Artifacts:
   Tags:
   - 1.32.3-1.5
   - 1.33.0-3.3
+  - 1.33.4-15.1
   - 1.34.0-3.4
+  - 1.34.4-15.1
   - 1.35.0-4.1
   - 1.35.0-5.2
   - 1.35.0-5.3
   - 1.35.0-6.1
+  - 1.35.2-11.1
+  - 1.36.1-3.1
   TargetRepositories:
   - registry.suse.com/rancher
   - stgregistry.suse.com/rancher
