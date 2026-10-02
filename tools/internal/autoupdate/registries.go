@@ -63,7 +63,7 @@ func (d DockerHub) getArtifactTags() ([]string, error) {
 	var allTags []string
 	page := 1
 
-	token, err := d.GetDockerAuthToken()
+	token, err := d.getDockerAuthToken()
 	if err != nil {
 		return nil, fmt.Errorf("failed to create token: %w", err)
 	}
@@ -116,7 +116,7 @@ func (d DockerHub) fetchPage(page int, token string) ([]string, bool, error) {
 	return tags, data.Next != "", nil
 }
 
-func (d DockerHub) GetDockerAuthToken() (string, error) {
+func (d DockerHub) getDockerAuthToken() (string, error) {
 	dockerUsername := os.Getenv("DOCKER_USERNAME")
 	dockerPassword := os.Getenv("DOCKER_PASSWORD")
 
