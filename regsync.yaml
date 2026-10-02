@@ -12971,6 +12971,9 @@ sync:
 - source: quay.io/calico/csi:v3.32.2
   target: docker.io/rancher/mirrored-calico-csi:v3.32.2
   type: image
+- source: quay.io/calico/csi:v3.33.0
+  target: docker.io/rancher/mirrored-calico-csi:v3.33.0
+  type: image
 - source: quay.io/calico/csi:v3.27.0
   target: registry.suse.com/rancher/mirrored-calico-csi:v3.27.0
   type: image
@@ -13046,6 +13049,9 @@ sync:
 - source: quay.io/calico/csi:v3.32.2
   target: registry.suse.com/rancher/mirrored-calico-csi:v3.32.2
   type: image
+- source: quay.io/calico/csi:v3.33.0
+  target: registry.suse.com/rancher/mirrored-calico-csi:v3.33.0
+  type: image
 - source: quay.io/calico/csi:v3.27.0
   target: stgregistry.suse.com/rancher/mirrored-calico-csi:v3.27.0
   type: image
@@ -13120,6 +13126,9 @@ sync:
   type: image
 - source: quay.io/calico/csi:v3.32.2
   target: stgregistry.suse.com/rancher/mirrored-calico-csi:v3.32.2
+  type: image
+- source: quay.io/calico/csi:v3.33.0
+  target: stgregistry.suse.com/rancher/mirrored-calico-csi:v3.33.0
   type: image
 - source: quay.io/calico/ctl:v3.16.5
   target: docker.io/rancher/calico-ctl:v3.16.5
