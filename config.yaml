@@ -3179,6 +3179,7 @@ Artifacts:
   - v1.42.0
   - v1.42.3
   - v1.42.6
+  - v1.44.0
   TargetArtifactName: mirrored-calico-operator
 - SourceArtifact: rancher/cluster-proportional-autoscaler
   Tags:
