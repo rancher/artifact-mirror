@@ -120,6 +120,19 @@
   - rancher/orbs
 - GithubRelease:
     Artifacts:
+    - SourceArtifact: quay.io/calico/envoy-gateway
+    - SourceArtifact: quay.io/calico/envoy-proxy
+    - SourceArtifact: quay.io/calico/envoy-ratelimit
+    - SourceArtifact: quay.io/calico/node
+    - SourceArtifact: quay.io/calico/whisker
+    Owner: projectcalico
+    Repository: calico
+    VersionConstraint: '>=3.33.0'
+  Name: calico
+  Reviewers:
+  - rancher/k3s-networking
+- GithubRelease:
+    Artifacts:
     - SourceArtifact: quay.io/calico/apiserver
     - SourceArtifact: quay.io/calico/cni
     - SourceArtifact: quay.io/calico/csi
@@ -135,10 +148,10 @@
     - SourceArtifact: quay.io/calico/typha
     - SourceArtifact: quay.io/calico/whisker
     - SourceArtifact: quay.io/calico/whisker-backend
-    LatestOnly: true
     Owner: projectcalico
     Repository: calico
-  Name: calico
+    VersionConstraint: '>=3.0.0 <3.33.0'
+  Name: calico-legacy
   Reviewers:
   - rancher/k3s-networking
 - HelmLatest:
