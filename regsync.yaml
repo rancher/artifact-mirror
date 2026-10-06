@@ -890,6 +890,9 @@ sync:
 - source: dp.apps.rancher.io/containers/k3k:1.1.1-4.8
   target: registry.suse.com/rancher/appco-k3k:1.1.1-4.8
   type: image
+- source: dp.apps.rancher.io/containers/k3k:1.1.1-5.1
+  target: registry.suse.com/rancher/appco-k3k:1.1.1-5.1
+  type: image
 - source: dp.apps.rancher.io/containers/k3k:1.2.0-1.1
   target: registry.suse.com/rancher/appco-k3k:1.2.0-1.1
   type: image
@@ -910,6 +913,9 @@ sync:
   type: image
 - source: dp.apps.rancher.io/containers/k3k:1.1.1-4.8
   target: stgregistry.suse.com/rancher/appco-k3k:1.1.1-4.8
+  type: image
+- source: dp.apps.rancher.io/containers/k3k:1.1.1-5.1
+  target: stgregistry.suse.com/rancher/appco-k3k:1.1.1-5.1
   type: image
 - source: dp.apps.rancher.io/containers/k3k:1.2.0-1.1
   target: stgregistry.suse.com/rancher/appco-k3k:1.2.0-1.1
