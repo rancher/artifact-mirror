@@ -33587,17 +33587,218 @@ sync:
 - source: quay.io/calico/pod2daemon-flexvol:v3.18.1
   target: stgregistry.suse.com/rancher/calico-pod2daemon-flexvol:v3.18.1
   type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.0.0
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.0.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.0.1
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.0.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.0.10
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.0.10
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.0.11
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.0.11
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.0.12
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.0.12
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.0.2
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.0.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.0.3
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.0.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.0.4
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.0.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.0.5
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.0.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.0.6
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.0.6
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.0.7
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.0.7
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.0.8
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.0.8
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.0.9
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.0.9
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.1.0
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.1.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.1.1
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.1.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.1.2
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.1.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.1.3
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.1.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.1.4
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.1.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.1.5
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.1.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.1.6
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.1.6
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.1.7
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.1.7
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.10.0
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.10.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.10.1
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.10.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.10.2
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.10.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.10.3
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.10.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.10.4
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.10.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.11.0
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.11.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.11.1
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.11.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.11.2
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.11.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.11.3
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.11.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.12.0
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.12.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.12.1
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.12.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.12.2
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.12.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.12.3
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.12.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.13.0
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.13.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.13.1
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.13.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.13.3
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.13.3
+  type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.13.4
   target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.13.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.14.0
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.14.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.14.1
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.14.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.15.0
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.15.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.15.1
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.15.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.15.2
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.15.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.15.3
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.15.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.15.4
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.15.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.15.5
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.15.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.16.0
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.16.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.16.1
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.16.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.16.10
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.16.10
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.16.2
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.16.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.16.3
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.16.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.16.4
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.16.4
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.16.5
   target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.16.5
   type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.16.6
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.16.6
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.16.7
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.16.7
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.16.8
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.16.8
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.16.9
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.16.9
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.17.0
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.17.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.17.1
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.17.1
+  type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.17.2
   target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.17.2
   type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.17.3
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.17.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.17.4
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.17.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.17.5
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.17.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.17.6
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.17.6
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.18.0
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.18.0
+  type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.18.1
   target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.18.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.18.2
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.18.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.18.3
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.18.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.18.4
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.18.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.18.5
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.18.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.18.6
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.18.6
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.19.0
   target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.19.0
@@ -33608,11 +33809,62 @@ sync:
 - source: quay.io/calico/pod2daemon-flexvol:v3.19.2
   target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.19.2
   type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.19.3
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.19.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.19.4
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.19.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.2.0
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.2.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.2.1
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.2.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.2.2
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.2.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.2.3
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.2.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.2.4
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.2.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.2.5
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.2.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.2.6
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.2.6
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.2.7
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.2.7
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.2.8
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.2.8
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.20.0
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.20.0
+  type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.20.1
   target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.20.1
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.20.2
   target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.20.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.20.3
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.20.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.20.4
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.20.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.20.5
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.20.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.20.6
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.20.6
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.21.0
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.21.0
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.21.1
   target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.21.1
@@ -33620,11 +33872,17 @@ sync:
 - source: quay.io/calico/pod2daemon-flexvol:v3.21.2
   target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.21.2
   type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.21.3
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.21.3
+  type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.21.4
   target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.21.4
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.21.5
   target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.21.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.21.6
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.21.6
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.22.0
   target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.22.0
@@ -33635,6 +33893,12 @@ sync:
 - source: quay.io/calico/pod2daemon-flexvol:v3.22.2
   target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.22.2
   type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.22.3
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.22.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.22.4
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.22.4
+  type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.22.5
   target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.22.5
   type: image
@@ -33644,20 +33908,50 @@ sync:
 - source: quay.io/calico/pod2daemon-flexvol:v3.23.1
   target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.23.1
   type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.23.2
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.23.2
+  type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.23.3
   target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.23.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.23.4
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.23.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.23.5
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.23.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.24.0
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.24.0
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.24.1
   target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.24.1
   type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.24.2
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.24.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.24.3
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.24.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.24.4
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.24.4
+  type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.24.5
   target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.24.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.24.6
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.24.6
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.25.0
   target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.25.0
   type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.25.1
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.25.1
+  type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.25.2
   target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.25.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.26.0
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.26.0
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.26.1
   target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.26.1
@@ -33671,6 +33965,9 @@ sync:
 - source: quay.io/calico/pod2daemon-flexvol:v3.26.4
   target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.26.4
   type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.26.5
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.26.5
+  type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.27.0
   target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.27.0
   type: image
@@ -33683,6 +33980,9 @@ sync:
 - source: quay.io/calico/pod2daemon-flexvol:v3.27.4
   target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.27.4
   type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.27.5
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.27.5
+  type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.28.0
   target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.28.0
   type: image
@@ -33691,6 +33991,15 @@ sync:
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.28.2
   target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.28.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.28.3
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.28.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.28.4
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.28.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.28.5
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.28.5
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.29.0
   target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.29.0
@@ -33703,6 +34012,42 @@ sync:
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.29.3
   target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.29.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.29.4
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.29.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.29.5
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.29.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.29.6
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.29.6
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.29.7
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.29.7
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.3.0
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.3.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.3.1
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.3.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.3.2
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.3.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.3.3
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.3.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.3.4
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.3.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.3.5
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.3.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.3.6
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.3.6
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.3.7
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.3.7
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.30.0
   target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.30.0
@@ -33718,6 +34063,15 @@ sync:
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.30.4
   target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.30.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.30.5
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.30.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.30.6
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.30.6
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.30.7
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.30.7
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.31.0
   target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.31.0
@@ -33737,6 +34091,12 @@ sync:
 - source: quay.io/calico/pod2daemon-flexvol:v3.31.5
   target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.31.5
   type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.31.6
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.31.6
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.31.7
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.31.7
+  type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.32.0
   target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.32.0
   type: image
@@ -33746,17 +34106,347 @@ sync:
 - source: quay.io/calico/pod2daemon-flexvol:v3.32.2
   target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.32.2
   type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.4.0
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.4.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.4.1
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.4.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.4.2
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.4.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.4.3
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.4.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.4.4
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.4.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.5.0
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.5.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.5.1
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.5.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.5.2
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.5.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.5.3
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.5.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.5.4
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.5.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.5.5
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.5.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.5.6
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.5.6
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.5.7
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.5.7
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.5.8
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.5.8
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.6.0
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.6.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.6.1
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.6.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.6.2
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.6.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.6.3
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.6.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.6.4
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.6.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.6.5
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.6.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.7.0
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.7.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.7.1
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.7.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.7.2
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.7.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.7.3
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.7.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.7.4
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.7.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.7.5
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.7.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.8.0
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.8.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.8.1
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.8.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.8.2
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.8.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.8.3
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.8.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.8.4
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.8.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.8.5
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.8.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.8.6
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.8.6
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.8.7
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.8.7
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.8.8
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.8.8
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.8.9
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.8.9
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.9.0
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.9.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.9.1
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.9.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.9.2
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.9.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.9.3
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.9.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.9.4
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.9.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.9.5
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.9.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.9.6
+  target: docker.io/rancher/mirrored-calico-pod2daemon-flexvol:v3.9.6
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.0.0
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.0.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.0.1
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.0.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.0.10
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.0.10
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.0.11
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.0.11
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.0.12
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.0.12
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.0.2
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.0.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.0.3
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.0.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.0.4
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.0.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.0.5
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.0.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.0.6
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.0.6
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.0.7
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.0.7
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.0.8
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.0.8
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.0.9
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.0.9
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.1.0
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.1.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.1.1
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.1.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.1.2
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.1.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.1.3
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.1.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.1.4
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.1.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.1.5
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.1.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.1.6
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.1.6
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.1.7
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.1.7
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.10.0
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.10.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.10.1
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.10.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.10.2
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.10.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.10.3
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.10.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.10.4
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.10.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.11.0
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.11.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.11.1
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.11.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.11.2
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.11.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.11.3
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.11.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.12.0
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.12.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.12.1
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.12.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.12.2
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.12.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.12.3
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.12.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.13.0
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.13.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.13.1
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.13.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.13.3
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.13.3
+  type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.13.4
   target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.13.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.14.0
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.14.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.14.1
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.14.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.15.0
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.15.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.15.1
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.15.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.15.2
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.15.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.15.3
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.15.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.15.4
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.15.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.15.5
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.15.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.16.0
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.16.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.16.1
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.16.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.16.10
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.16.10
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.16.2
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.16.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.16.3
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.16.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.16.4
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.16.4
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.16.5
   target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.16.5
   type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.16.6
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.16.6
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.16.7
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.16.7
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.16.8
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.16.8
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.16.9
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.16.9
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.17.0
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.17.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.17.1
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.17.1
+  type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.17.2
   target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.17.2
   type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.17.3
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.17.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.17.4
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.17.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.17.5
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.17.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.17.6
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.17.6
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.18.0
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.18.0
+  type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.18.1
   target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.18.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.18.2
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.18.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.18.3
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.18.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.18.4
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.18.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.18.5
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.18.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.18.6
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.18.6
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.19.0
   target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.19.0
@@ -33767,11 +34457,62 @@ sync:
 - source: quay.io/calico/pod2daemon-flexvol:v3.19.2
   target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.19.2
   type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.19.3
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.19.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.19.4
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.19.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.2.0
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.2.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.2.1
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.2.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.2.2
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.2.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.2.3
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.2.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.2.4
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.2.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.2.5
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.2.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.2.6
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.2.6
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.2.7
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.2.7
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.2.8
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.2.8
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.20.0
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.20.0
+  type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.20.1
   target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.20.1
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.20.2
   target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.20.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.20.3
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.20.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.20.4
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.20.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.20.5
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.20.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.20.6
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.20.6
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.21.0
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.21.0
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.21.1
   target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.21.1
@@ -33779,11 +34520,17 @@ sync:
 - source: quay.io/calico/pod2daemon-flexvol:v3.21.2
   target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.21.2
   type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.21.3
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.21.3
+  type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.21.4
   target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.21.4
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.21.5
   target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.21.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.21.6
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.21.6
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.22.0
   target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.22.0
@@ -33794,6 +34541,12 @@ sync:
 - source: quay.io/calico/pod2daemon-flexvol:v3.22.2
   target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.22.2
   type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.22.3
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.22.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.22.4
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.22.4
+  type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.22.5
   target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.22.5
   type: image
@@ -33803,20 +34556,50 @@ sync:
 - source: quay.io/calico/pod2daemon-flexvol:v3.23.1
   target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.23.1
   type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.23.2
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.23.2
+  type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.23.3
   target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.23.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.23.4
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.23.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.23.5
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.23.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.24.0
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.24.0
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.24.1
   target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.24.1
   type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.24.2
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.24.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.24.3
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.24.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.24.4
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.24.4
+  type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.24.5
   target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.24.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.24.6
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.24.6
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.25.0
   target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.25.0
   type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.25.1
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.25.1
+  type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.25.2
   target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.25.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.26.0
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.26.0
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.26.1
   target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.26.1
@@ -33830,6 +34613,9 @@ sync:
 - source: quay.io/calico/pod2daemon-flexvol:v3.26.4
   target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.26.4
   type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.26.5
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.26.5
+  type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.27.0
   target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.27.0
   type: image
@@ -33842,6 +34628,9 @@ sync:
 - source: quay.io/calico/pod2daemon-flexvol:v3.27.4
   target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.27.4
   type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.27.5
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.27.5
+  type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.28.0
   target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.28.0
   type: image
@@ -33850,6 +34639,15 @@ sync:
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.28.2
   target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.28.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.28.3
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.28.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.28.4
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.28.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.28.5
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.28.5
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.29.0
   target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.29.0
@@ -33862,6 +34660,42 @@ sync:
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.29.3
   target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.29.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.29.4
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.29.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.29.5
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.29.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.29.6
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.29.6
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.29.7
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.29.7
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.3.0
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.3.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.3.1
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.3.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.3.2
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.3.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.3.3
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.3.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.3.4
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.3.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.3.5
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.3.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.3.6
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.3.6
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.3.7
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.3.7
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.30.0
   target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.30.0
@@ -33877,6 +34711,15 @@ sync:
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.30.4
   target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.30.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.30.5
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.30.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.30.6
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.30.6
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.30.7
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.30.7
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.31.0
   target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.31.0
@@ -33896,6 +34739,12 @@ sync:
 - source: quay.io/calico/pod2daemon-flexvol:v3.31.5
   target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.31.5
   type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.31.6
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.31.6
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.31.7
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.31.7
+  type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.32.0
   target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.32.0
   type: image
@@ -33905,17 +34754,347 @@ sync:
 - source: quay.io/calico/pod2daemon-flexvol:v3.32.2
   target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.32.2
   type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.4.0
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.4.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.4.1
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.4.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.4.2
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.4.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.4.3
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.4.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.4.4
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.4.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.5.0
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.5.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.5.1
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.5.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.5.2
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.5.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.5.3
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.5.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.5.4
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.5.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.5.5
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.5.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.5.6
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.5.6
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.5.7
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.5.7
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.5.8
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.5.8
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.6.0
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.6.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.6.1
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.6.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.6.2
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.6.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.6.3
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.6.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.6.4
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.6.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.6.5
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.6.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.7.0
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.7.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.7.1
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.7.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.7.2
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.7.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.7.3
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.7.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.7.4
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.7.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.7.5
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.7.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.8.0
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.8.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.8.1
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.8.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.8.2
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.8.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.8.3
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.8.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.8.4
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.8.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.8.5
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.8.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.8.6
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.8.6
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.8.7
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.8.7
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.8.8
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.8.8
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.8.9
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.8.9
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.9.0
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.9.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.9.1
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.9.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.9.2
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.9.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.9.3
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.9.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.9.4
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.9.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.9.5
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.9.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.9.6
+  target: registry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.9.6
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.0.0
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.0.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.0.1
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.0.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.0.10
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.0.10
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.0.11
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.0.11
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.0.12
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.0.12
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.0.2
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.0.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.0.3
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.0.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.0.4
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.0.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.0.5
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.0.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.0.6
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.0.6
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.0.7
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.0.7
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.0.8
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.0.8
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.0.9
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.0.9
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.1.0
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.1.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.1.1
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.1.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.1.2
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.1.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.1.3
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.1.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.1.4
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.1.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.1.5
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.1.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.1.6
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.1.6
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.1.7
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.1.7
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.10.0
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.10.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.10.1
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.10.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.10.2
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.10.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.10.3
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.10.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.10.4
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.10.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.11.0
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.11.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.11.1
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.11.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.11.2
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.11.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.11.3
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.11.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.12.0
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.12.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.12.1
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.12.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.12.2
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.12.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.12.3
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.12.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.13.0
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.13.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.13.1
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.13.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.13.3
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.13.3
+  type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.13.4
   target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.13.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.14.0
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.14.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.14.1
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.14.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.15.0
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.15.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.15.1
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.15.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.15.2
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.15.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.15.3
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.15.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.15.4
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.15.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.15.5
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.15.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.16.0
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.16.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.16.1
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.16.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.16.10
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.16.10
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.16.2
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.16.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.16.3
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.16.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.16.4
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.16.4
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.16.5
   target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.16.5
   type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.16.6
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.16.6
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.16.7
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.16.7
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.16.8
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.16.8
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.16.9
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.16.9
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.17.0
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.17.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.17.1
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.17.1
+  type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.17.2
   target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.17.2
   type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.17.3
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.17.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.17.4
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.17.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.17.5
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.17.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.17.6
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.17.6
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.18.0
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.18.0
+  type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.18.1
   target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.18.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.18.2
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.18.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.18.3
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.18.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.18.4
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.18.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.18.5
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.18.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.18.6
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.18.6
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.19.0
   target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.19.0
@@ -33926,11 +35105,62 @@ sync:
 - source: quay.io/calico/pod2daemon-flexvol:v3.19.2
   target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.19.2
   type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.19.3
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.19.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.19.4
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.19.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.2.0
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.2.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.2.1
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.2.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.2.2
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.2.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.2.3
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.2.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.2.4
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.2.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.2.5
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.2.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.2.6
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.2.6
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.2.7
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.2.7
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.2.8
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.2.8
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.20.0
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.20.0
+  type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.20.1
   target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.20.1
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.20.2
   target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.20.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.20.3
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.20.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.20.4
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.20.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.20.5
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.20.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.20.6
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.20.6
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.21.0
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.21.0
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.21.1
   target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.21.1
@@ -33938,11 +35168,17 @@ sync:
 - source: quay.io/calico/pod2daemon-flexvol:v3.21.2
   target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.21.2
   type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.21.3
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.21.3
+  type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.21.4
   target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.21.4
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.21.5
   target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.21.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.21.6
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.21.6
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.22.0
   target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.22.0
@@ -33953,6 +35189,12 @@ sync:
 - source: quay.io/calico/pod2daemon-flexvol:v3.22.2
   target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.22.2
   type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.22.3
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.22.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.22.4
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.22.4
+  type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.22.5
   target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.22.5
   type: image
@@ -33962,20 +35204,50 @@ sync:
 - source: quay.io/calico/pod2daemon-flexvol:v3.23.1
   target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.23.1
   type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.23.2
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.23.2
+  type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.23.3
   target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.23.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.23.4
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.23.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.23.5
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.23.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.24.0
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.24.0
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.24.1
   target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.24.1
   type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.24.2
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.24.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.24.3
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.24.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.24.4
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.24.4
+  type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.24.5
   target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.24.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.24.6
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.24.6
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.25.0
   target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.25.0
   type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.25.1
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.25.1
+  type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.25.2
   target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.25.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.26.0
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.26.0
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.26.1
   target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.26.1
@@ -33989,6 +35261,9 @@ sync:
 - source: quay.io/calico/pod2daemon-flexvol:v3.26.4
   target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.26.4
   type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.26.5
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.26.5
+  type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.27.0
   target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.27.0
   type: image
@@ -34001,6 +35276,9 @@ sync:
 - source: quay.io/calico/pod2daemon-flexvol:v3.27.4
   target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.27.4
   type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.27.5
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.27.5
+  type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.28.0
   target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.28.0
   type: image
@@ -34009,6 +35287,15 @@ sync:
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.28.2
   target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.28.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.28.3
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.28.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.28.4
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.28.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.28.5
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.28.5
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.29.0
   target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.29.0
@@ -34021,6 +35308,42 @@ sync:
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.29.3
   target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.29.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.29.4
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.29.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.29.5
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.29.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.29.6
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.29.6
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.29.7
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.29.7
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.3.0
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.3.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.3.1
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.3.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.3.2
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.3.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.3.3
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.3.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.3.4
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.3.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.3.5
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.3.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.3.6
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.3.6
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.3.7
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.3.7
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.30.0
   target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.30.0
@@ -34036,6 +35359,15 @@ sync:
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.30.4
   target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.30.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.30.5
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.30.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.30.6
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.30.6
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.30.7
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.30.7
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.31.0
   target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.31.0
@@ -34055,6 +35387,12 @@ sync:
 - source: quay.io/calico/pod2daemon-flexvol:v3.31.5
   target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.31.5
   type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.31.6
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.31.6
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.31.7
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.31.7
+  type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.32.0
   target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.32.0
   type: image
@@ -34063,6 +35401,135 @@ sync:
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.32.2
   target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.32.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.4.0
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.4.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.4.1
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.4.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.4.2
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.4.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.4.3
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.4.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.4.4
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.4.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.5.0
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.5.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.5.1
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.5.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.5.2
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.5.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.5.3
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.5.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.5.4
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.5.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.5.5
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.5.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.5.6
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.5.6
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.5.7
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.5.7
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.5.8
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.5.8
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.6.0
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.6.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.6.1
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.6.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.6.2
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.6.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.6.3
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.6.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.6.4
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.6.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.6.5
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.6.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.7.0
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.7.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.7.1
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.7.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.7.2
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.7.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.7.3
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.7.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.7.4
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.7.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.7.5
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.7.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.8.0
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.8.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.8.1
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.8.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.8.2
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.8.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.8.3
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.8.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.8.4
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.8.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.8.5
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.8.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.8.6
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.8.6
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.8.7
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.8.7
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.8.8
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.8.8
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.8.9
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.8.9
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.9.0
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.9.0
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.9.1
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.9.1
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.9.2
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.9.2
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.9.3
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.9.3
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.9.4
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.9.4
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.9.5
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.9.5
+  type: image
+- source: quay.io/calico/pod2daemon-flexvol:v3.9.6
+  target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.9.6
   type: image
 - source: quay.io/calico/typha:v3.18.1
   target: docker.io/rancher/mirrored-calico-typha:v3.18.1
