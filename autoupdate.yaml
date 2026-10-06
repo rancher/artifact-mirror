@@ -275,7 +275,8 @@
   - rancher/k3s
 - GithubRelease:
     Artifacts:
-    - SourceArtifact: flannel/flannel
+    - SourceArtifact: ghcr.io/flannel-io/flannel
+      TargetArtifactName: mirrored-flannel-flannel
     LatestOnly: true
     Owner: flannel-io
     Repository: flannel
@@ -284,7 +285,8 @@
   - rancher/k3s-networking
 - GithubRelease:
     Artifacts:
-    - SourceArtifact: flannel/flannel-cni-plugin
+    - SourceArtifact: ghcr.io/flannel-io/flannel-cni-plugin
+      TargetArtifactName: mirrored-flannel-flannel-cni-plugin
     LatestOnly: true
     Owner: flannel-io
     Repository: cni-plugin
