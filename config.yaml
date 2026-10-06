@@ -178,6 +178,7 @@ Artifacts:
   - 1.1.0-1.1
   - 1.1.1-4.8
   - 1.2.0-1.1
+  - 1.2.0-3.1
   TargetRepositories:
   - registry.suse.com/rancher
   - stgregistry.suse.com/rancher
