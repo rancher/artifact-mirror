@@ -58,6 +58,8 @@ Artifacts:
   - 1.14.2
   - 1.14.3
   - 1.14.4
+  - 1.14.6
+  - 1.14.7
   - 1.6.2
   - 1.6.5
   - 1.6.9
@@ -108,6 +110,7 @@ Artifacts:
   - 9.57.0-7.1
   - 9.57.0-8.1
   - 9.57.0-9.1
+  - 9.59.0
   TargetRepositories:
   - registry.suse.com/rancher/charts
   - stgregistry.suse.com/rancher/charts
@@ -118,6 +121,8 @@ Artifacts:
   - 1.0.2
   - 1.0.3
   - 1.1.0
+  - 1.1.1
+  - 1.2.0
   TargetRepositories:
   - registry.suse.com/rancher/charts
   - stgregistry.suse.com/rancher/charts
@@ -134,6 +139,9 @@ Artifacts:
   - 8.14.1-7.3
   - 8.14.1-8.1
   - 8.14.1-8.3
+  TargetRepositories:
+  - registry.suse.com/rancher
+  - stgregistry.suse.com/rancher
 - SourceArtifact: dp.apps.rancher.io/containers/grafana
   Tags:
   - 12.1.1-2.2
@@ -144,6 +152,12 @@ Artifacts:
   - 13.0.1-3.4
   - 13.0.1-3.5
   - 13.0.1-4.1
+- SourceArtifact: dp.apps.rancher.io/containers/grafana-image-renderer
+  Tags:
+  - "5"
+  TargetRepositories:
+  - registry.suse.com/rancher
+  - stgregistry.suse.com/rancher
 - SourceArtifact: dp.apps.rancher.io/containers/k3k
   Tags:
   - 1.0.0-1.1
@@ -151,6 +165,8 @@ Artifacts:
   - 1.0.2-2.3
   - 1.0.3-7.1
   - 1.1.0-1.1
+  - 1.1.1-4.8
+  - 1.2.0-1.1
   TargetRepositories:
   - registry.suse.com/rancher
   - stgregistry.suse.com/rancher
@@ -161,6 +177,8 @@ Artifacts:
   - 1.0.2-2.3
   - 1.0.3-7.1
   - 1.1.0-1.1
+  - 1.1.1-4.8
+  - 1.2.0-1.1
   TargetRepositories:
   - registry.suse.com/rancher
   - stgregistry.suse.com/rancher
@@ -187,11 +205,15 @@ Artifacts:
   Tags:
   - 1.32.3-1.5
   - 1.33.0-3.3
+  - 1.33.4-15.1
   - 1.34.0-3.4
+  - 1.34.5-15.1
   - 1.35.0-4.1
   - 1.35.0-5.2
   - 1.35.0-5.3
   - 1.35.0-6.1
+  - 1.35.2-11.1
+  - 1.36.1-3.1
   TargetRepositories:
   - registry.suse.com/rancher
   - stgregistry.suse.com/rancher
@@ -255,6 +277,7 @@ Artifacts:
   - v1.9.0-flannel1
   - v1.9.1-flannel1
   - v1.9.1-flannel2
+  - v1.9.1-flannel3
 - SourceArtifact: flannelcni/flannel
   Tags:
   - v0.16.0
@@ -454,11 +477,13 @@ Artifacts:
   - "3.1"
   - "3.2"
   TargetArtifactName: mirrored-pause
-- SourceArtifact: gcr.io/kubebuilder/kube-rbac-proxy
+- DoNotMirror: true
+  SourceArtifact: gcr.io/kubebuilder/kube-rbac-proxy
   Tags:
   - v0.5.0
   TargetArtifactName: kube-rbac-proxy
-- SourceArtifact: gcr.io/kubebuilder/kube-rbac-proxy
+- DoNotMirror: true
+  SourceArtifact: gcr.io/kubebuilder/kube-rbac-proxy
   Tags:
   - v0.14.0
   - v0.15.0
@@ -519,6 +544,19 @@ Artifacts:
   - v1.6.2
   - v1.8.1
   - v1.9.0
+- SourceArtifact: ghcr.io/flannel-io/flannel
+  Tags:
+  - v0.28.6
+  - v0.28.7
+  - v0.28.8
+  - v0.28.9
+  TargetArtifactName: mirrored-flannel-flannel
+- DoNotMirror:
+  - v1.9.1-flannel3
+  SourceArtifact: ghcr.io/flannel-io/flannel-cni-plugin
+  Tags:
+  - v1.9.1-flannel3
+  TargetArtifactName: mirrored-flannel-flannel-cni-plugin
 - SourceArtifact: ghcr.io/jimmidyson/configmap-reload
   Tags:
   - v0.13.1
@@ -559,6 +597,9 @@ Artifacts:
   - v1.0.1
   - v1.0.4
   - v1.1.2
+  - v1.2.1
+  - v1.2.3
+  - v1.2.4
 - SourceArtifact: ghcr.io/prometheus-community/windows-exporter
   Tags:
   - 0.25.1
@@ -568,6 +609,12 @@ Artifacts:
   - 0.31.3
   - 0.31.6
   TargetArtifactName: mirrored-prometheus-windows-exporter
+- SourceArtifact: ghcr.io/rmoioliveira/rebuild-grafana-image-renderer
+  Tags:
+  - v5.10.1-1
+  - v5.10.1-2
+  - v5.10.1-3
+  TargetArtifactName: mirrored-grafana-grafana-image-renderer
 - SourceArtifact: grafana/grafana
   Tags:
   - 7.1.5
@@ -610,6 +657,7 @@ Artifacts:
   - v4.0.15
   - v4.0.5
   - v5.1.0
+  - v5.10.1
   - v5.8.3
 - SourceArtifact: idealista/prom2teams
   Tags:
@@ -954,6 +1002,7 @@ Artifacts:
   - 1.29.1-alpine
   - 1.29.8-alpine
   - 1.31.2-alpine
+  - 1.31.3-alpine
 - SourceArtifact: library/redis
   Tags:
   - 7.2.9
@@ -1016,8 +1065,12 @@ Artifacts:
   - 3.6.7
   - 3.6.9
   - 3.7.1
+  - 3.7.12
+  - 3.7.13
   - 3.7.4
   - 3.7.6
+  - 3.7.7
+  - 3.7.8
 - SourceArtifact: longhornio/backing-image-manager
   Tags:
   - v1_20210422
@@ -1033,6 +1086,8 @@ Artifacts:
   - v1.10.2
   - v1.11.1
   - v1.11.2
+  - v1.11.3
+  - v1.12.1
   - v1.4.0
   - v1.4.1
   - v1.4.2
@@ -1084,6 +1139,7 @@ Artifacts:
   - v4.10.0-20251226
   - v4.11.0
   - v4.11.0-20260428
+  - v4.12.0
   - v4.2.0
   - v4.4.2
   - v4.5.1
@@ -1114,6 +1170,7 @@ Artifacts:
   - v2.15.0-20251226
   - v2.16.0
   - v2.16.0-20260428
+  - v2.17.0
   - v2.3.0
   - v2.5.0
   - v2.7.0
@@ -1145,6 +1202,7 @@ Artifacts:
   - v5.3.0-20251226
   - v5.3.0-20260225
   - v5.3.0-20260428
+  - v6.3.0
 - SourceArtifact: longhornio/csi-resizer
   Tags:
   - v0.3.0
@@ -1171,6 +1229,8 @@ Artifacts:
   - v1.9.2
   - v2.1.0
   - v2.1.0-20260428
+  - v2.2.0
+  - v2.2.1
 - SourceArtifact: longhornio/csi-snapshotter
   Tags:
   - v2.1.1-lh1
@@ -1196,6 +1256,7 @@ Artifacts:
   - v8.4.0-20251226
   - v8.5.0
   - v8.5.0-20260428
+  - v8.6.0
 - SourceArtifact: longhornio/livenessprobe
   Tags:
   - v2.11.0
@@ -1210,6 +1271,7 @@ Artifacts:
   - v2.17.0-20251226
   - v2.18.0
   - v2.18.0-20260428
+  - v2.19.0
   - v2.8.0
   - v2.9.0
 - SourceArtifact: longhornio/longhorn-cli
@@ -1218,6 +1280,8 @@ Artifacts:
   - v1.10.2
   - v1.11.1
   - v1.11.2
+  - v1.11.3
+  - v1.12.1
   - v1.7.0
   - v1.7.1
   - v1.7.2
@@ -1252,6 +1316,8 @@ Artifacts:
   - v1.10.2
   - v1.11.1
   - v1.11.2
+  - v1.11.3
+  - v1.12.1
   - v1.2.0
   - v1.2.1
   - v1.2.2
@@ -1305,6 +1371,8 @@ Artifacts:
   - v1.10.2
   - v1.11.1
   - v1.11.2
+  - v1.11.3
+  - v1.12.1
   - v1.4.0
   - v1.4.1
   - v1.4.2
@@ -1368,6 +1436,8 @@ Artifacts:
   - v1.10.2
   - v1.11.1
   - v1.11.2
+  - v1.11.3
+  - v1.12.1
   - v1.2.0
   - v1.2.1
   - v1.2.2
@@ -1422,6 +1492,8 @@ Artifacts:
   - v1.10.2
   - v1.11.1
   - v1.11.2
+  - v1.11.3
+  - v1.12.1
   - v1.4.0
   - v1.4.1
   - v1.4.2
@@ -1484,6 +1556,8 @@ Artifacts:
   - v1.10.2
   - v1.11.1
   - v1.11.2
+  - v1.11.3
+  - v1.12.1
   - v1.2.0
   - v1.2.1
   - v1.2.2
@@ -1548,28 +1622,13 @@ Artifacts:
   - v0.0.79
   - v0.0.81
   - v0.0.84
+  - v0.0.88
+  - v0.0.92
 - SourceArtifact: messagebird/sachet
   Tags:
   - 0.2.3
   - 0.2.6
   - 0.3.1
-- SourceArtifact: minio/mc
-  Tags:
-  - RELEASE.2022-05-09T04-08-26Z
-  - RELEASE.2022-09-16T09-16-47Z
-  - RELEASE.2022-11-07T23-47-39Z
-  - RELEASE.2022-12-13T00-23-28Z
-  - RELEASE.2023-01-28T20-29-38Z
-  - RELEASE.2023-06-28T21-54-17Z
-- SourceArtifact: minio/minio
-  Tags:
-  - RELEASE.2020-07-13T18-09-56Z
-  - RELEASE.2022-05-08T23-50-31Z
-  - RELEASE.2022-09-17T00-09-45Z
-  - RELEASE.2022-11-11T03-44-20Z
-  - RELEASE.2022-12-12T19-27-27Z
-  - RELEASE.2023-02-10T18-48-39Z
-  - RELEASE.2023-07-07T07-13-57Z
 - SourceArtifact: neuvector/compliance-config
   Tags:
   - 1.0.0
@@ -1796,6 +1855,7 @@ Artifacts:
   - v3.31.5
   - v3.32.0
   - v3.32.1
+  - v3.32.2
 - SourceArtifact: quay.io/calico/cni
   Tags:
   - v3.16.5
@@ -1858,6 +1918,7 @@ Artifacts:
   - v3.31.5
   - v3.32.0
   - v3.32.1
+  - v3.32.2
 - SourceArtifact: quay.io/calico/csi
   Tags:
   - v3.27.0
@@ -1884,6 +1945,7 @@ Artifacts:
   - v3.31.5
   - v3.32.0
   - v3.32.1
+  - v3.32.2
 - SourceArtifact: quay.io/calico/ctl
   Tags:
   - v3.16.5
@@ -1948,6 +2010,7 @@ Artifacts:
   - v3.31.5
   - v3.32.0
   - v3.32.1
+  - v3.32.2
 - SourceArtifact: quay.io/calico/envoy-gateway
   Tags:
   - v3.30.0
@@ -1963,6 +2026,8 @@ Artifacts:
   - v3.31.5
   - v3.32.0
   - v3.32.1
+  - v3.32.2
+  - v3.33.0
 - SourceArtifact: quay.io/calico/envoy-proxy
   Tags:
   - v3.30.0
@@ -1978,6 +2043,8 @@ Artifacts:
   - v3.31.5
   - v3.32.0
   - v3.32.1
+  - v3.32.2
+  - v3.33.0
 - SourceArtifact: quay.io/calico/envoy-ratelimit
   Tags:
   - v3.30.0
@@ -1993,6 +2060,8 @@ Artifacts:
   - v3.31.5
   - v3.32.0
   - v3.32.1
+  - v3.32.2
+  - v3.33.0
 - SourceArtifact: quay.io/calico/goldmane
   Tags:
   - v3.30.0
@@ -2008,6 +2077,7 @@ Artifacts:
   - v3.31.5
   - v3.32.0
   - v3.32.1
+  - v3.32.2
 - SourceArtifact: quay.io/calico/kube-controllers
   Tags:
   - v3.16.5
@@ -2070,6 +2140,7 @@ Artifacts:
   - v3.31.5
   - v3.32.0
   - v3.32.1
+  - v3.32.2
 - SourceArtifact: quay.io/calico/node
   Tags:
   - v3.16.5
@@ -2132,6 +2203,8 @@ Artifacts:
   - v3.31.5
   - v3.32.0
   - v3.32.1
+  - v3.32.2
+  - v3.33.0
 - SourceArtifact: quay.io/calico/node-driver-registrar
   Tags:
   - v3.27.0
@@ -2158,6 +2231,7 @@ Artifacts:
   - v3.31.5
   - v3.32.0
   - v3.32.1
+  - v3.32.2
 - SourceArtifact: quay.io/calico/pod2daemon-flexvol
   Tags:
   - v3.16.5
@@ -2220,6 +2294,7 @@ Artifacts:
   - v3.31.5
   - v3.32.0
   - v3.32.1
+  - v3.32.2
 - SourceArtifact: quay.io/calico/typha
   Tags:
   - v3.18.1
@@ -2270,6 +2345,7 @@ Artifacts:
   - v3.31.5
   - v3.32.0
   - v3.32.1
+  - v3.32.2
 - SourceArtifact: quay.io/calico/whisker
   Tags:
   - v3.30.0
@@ -2285,6 +2361,8 @@ Artifacts:
   - v3.31.5
   - v3.32.0
   - v3.32.1
+  - v3.32.2
+  - v3.33.0
 - SourceArtifact: quay.io/calico/whisker-backend
   Tags:
   - v3.30.0
@@ -2300,6 +2378,7 @@ Artifacts:
   - v3.31.5
   - v3.32.0
   - v3.32.1
+  - v3.32.2
 - SourceArtifact: quay.io/cilium/certgen
   Tags:
   - v0.1.11
@@ -2313,8 +2392,12 @@ Artifacts:
   - v0.3.1
   - v0.3.2
   - v0.4.1
+  - v0.4.11
   - v0.4.3
   - v0.4.5
+  - v0.4.6
+  - v0.4.8
+  - v0.4.9
 - SourceArtifact: quay.io/cilium/cilium
   Tags:
   - v1.10.4
@@ -2372,6 +2455,10 @@ Artifacts:
   - v1.19.3
   - v1.19.4
   - v1.19.5
+  - v1.19.6
+  - v1.20.0
+  - v1.20.1
+  - v1.20.2
   - v1.9.12
   - v1.9.4
   - v1.9.6
@@ -2416,6 +2503,10 @@ Artifacts:
   - v1.36.6-1776000132-2437d2edeaf4d9b56ef279bd0d71127440c067aa
   - v1.36.6-1778235340-b87d1e32f522b33bd51701c6476d199326f01496
   - v1.36.8-1781157951-a7f42a3390781539911b5b9107881b35ecc4e752
+  - v1.36.9-1782267392-edeb3f2af56c37c407efa1f63f0b32f595399bbc
+  - v1.37.5-1782911245-7cffc778c923f68a77954a53b1a98d6b5353f004
+  - v1.37.5-1786810558-766ccfb37260a43e9d228837aa84ce3faf9f64e7
+  - v1.37.6-1789133542-cbec91f666af0bf742da986d43832932dbb26b82
 - SourceArtifact: quay.io/cilium/cilium-etcd-operator
   Tags:
   - v2.0.7
@@ -2466,6 +2557,10 @@ Artifacts:
   - v1.19.3
   - v1.19.4
   - v1.19.5
+  - v1.19.6
+  - v1.20.0
+  - v1.20.1
+  - v1.20.2
 - SourceArtifact: quay.io/cilium/hubble-relay
   Tags:
   - v1.12.4
@@ -2513,6 +2608,10 @@ Artifacts:
   - v1.19.3
   - v1.19.4
   - v1.19.5
+  - v1.19.6
+  - v1.20.0
+  - v1.20.1
+  - v1.20.2
 - SourceArtifact: quay.io/cilium/hubble-ui
   Tags:
   - v0.10.0
@@ -2525,6 +2624,7 @@ Artifacts:
   - v0.13.2
   - v0.13.3
   - v0.13.5
+  - v0.13.6
   - v0.9.2
 - SourceArtifact: quay.io/cilium/hubble-ui-backend
   Tags:
@@ -2538,6 +2638,7 @@ Artifacts:
   - v0.13.2
   - v0.13.3
   - v0.13.5
+  - v0.13.6
   - v0.9.2
 - SourceArtifact: quay.io/cilium/kvstoremesh
   Tags:
@@ -2604,6 +2705,10 @@ Artifacts:
   - v1.19.3
   - v1.19.4
   - v1.19.5
+  - v1.19.6
+  - v1.20.0
+  - v1.20.1
+  - v1.20.2
   - v1.9.12
   - v1.9.4
   - v1.9.6
@@ -2665,6 +2770,10 @@ Artifacts:
   - v1.19.3
   - v1.19.4
   - v1.19.5
+  - v1.19.6
+  - v1.20.0
+  - v1.20.1
+  - v1.20.2
   - v1.9.12
   - v1.9.4
   - v1.9.6
@@ -2726,6 +2835,10 @@ Artifacts:
   - v1.19.3
   - v1.19.4
   - v1.19.5
+  - v1.19.6
+  - v1.20.0
+  - v1.20.1
+  - v1.20.2
   - v1.9.12
   - v1.9.4
   - v1.9.6
@@ -2762,6 +2875,9 @@ Artifacts:
   - v3.5.3
   - v3.5.30
   - v3.5.31
+  - v3.5.32
+  - v3.5.33
+  - v3.5.34
   - v3.5.4
   - v3.5.6
   - v3.5.7
@@ -2771,6 +2887,9 @@ Artifacts:
   - v3.6.10
   - v3.6.11
   - v3.6.12
+  - v3.6.13
+  - v3.6.14
+  - v3.6.15
   - v3.6.2
   - v3.6.3
   - v3.6.4
@@ -2779,6 +2898,9 @@ Artifacts:
   - v3.6.7
   - v3.6.8
   - v3.6.9
+  - v3.7.0
+  - v3.7.1
+  - v3.7.2
 - SourceArtifact: quay.io/coreos/flannel
   Tags:
   - v0.13.0
@@ -2889,9 +3011,6 @@ Artifacts:
   - 1.26.1
   - 1.28.0
   - 1.30.0
-- SourceArtifact: quay.io/minio/minio
-  Tags:
-  - RELEASE.2022-03-24T00-43-44Z
 - SourceArtifact: quay.io/openshift/origin-ovirt-csi-driver
   Tags:
   - 4.15.0
@@ -3067,6 +3186,8 @@ Artifacts:
   - v1.40.8
   - v1.42.0
   - v1.42.3
+  - v1.42.6
+  - v1.44.0
   TargetArtifactName: mirrored-calico-operator
 - SourceArtifact: rancher/cluster-proportional-autoscaler
   Tags:
@@ -3113,6 +3234,7 @@ Artifacts:
   - v1.35.0
   - v1.35.1
   - v1.36.0
+  - v1.37.0
   TargetArtifactName: mirrored-cloud-provider-vsphere
 - DoNotMirror: true
   SourceArtifact: registry.k8s.io/cloud-pv-vsphere/cloud-provider-vsphere
@@ -3161,6 +3283,7 @@ Artifacts:
   - v3.7.0
   - v3.7.1
   - v3.7.2
+  - v3.7.3
   TargetArtifactName: mirrored-cloud-provider-vsphere-csi-release-driver
 - SourceArtifact: registry.k8s.io/csi-vsphere/syncer
   Tags:
@@ -3171,6 +3294,7 @@ Artifacts:
   - v3.7.0
   - v3.7.1
   - v3.7.2
+  - v3.7.3
   TargetArtifactName: mirrored-cloud-provider-vsphere-csi-release-syncer
 - SourceArtifact: registry.k8s.io/dns/k8s-dns-dnsmasq-nanny
   Tags:
@@ -3282,10 +3406,12 @@ Artifacts:
   - v0.7.2
   - v0.8.0
   - v0.8.1
+  - v0.9.0
   TargetArtifactName: mirrored-metrics-server
 - SourceArtifact: registry.k8s.io/pause
   Tags:
   - "3.10"
+  - 3.10.2
   - 3.4.1
   - "3.5"
   - "3.6"
@@ -3500,15 +3626,19 @@ Artifacts:
   - 1.5.3
   - 1.5.4
   - 1.6.10
+  - 1.6.11
   - 1.6.4
   - 1.6.5
   - 1.6.8
   - 1.6.9
   - 1.7.3
   - 1.7.4
+  - 1.7.5
   - 1.8.1
+  - 1.8.2
   - 1.9.0
   - 1.9.1
+  - 1.9.2
   TargetArtifactName: mirrored-elemental-operator
 - SourceArtifact: registry.suse.com/rancher/seedimage-builder
   Tags:
@@ -3518,15 +3648,19 @@ Artifacts:
   - 1.5.3
   - 1.5.4
   - 1.6.10
+  - 1.6.11
   - 1.6.4
   - 1.6.5
   - 1.6.8
   - 1.6.9
   - 1.7.3
   - 1.7.4
+  - 1.7.5
   - 1.8.1
+  - 1.8.2
   - 1.9.0
   - 1.9.1
+  - 1.9.2
   TargetArtifactName: mirrored-elemental-seedimage-builder
 - SourceArtifact: rpardini/docker-registry-proxy
   Tags:

@@ -134,12 +134,10 @@ func formatFiles(_ context.Context, _ *cli.Command) error {
 // autoUpdate uses the contents of autoupdate.yaml to make pull requests
 // that update config.yaml.
 func autoUpdate(ctx context.Context, _ *cli.Command) error {
-	if !dryRun {
-		if clean, err := git.IsWorkingTreeClean(); err != nil {
-			return fmt.Errorf("failed to get status of working tree: %w", err)
-		} else if !clean {
-			return errors.New("working tree or index has changes")
-		}
+	if clean, err := git.IsWorkingTreeClean(); err != nil {
+		return fmt.Errorf("failed to get status of working tree: %w", err)
+	} else if !clean {
+		return errors.New("working tree or index has changes")
 	}
 
 	configYaml, err := config.Parse(paths.ConfigYaml)
@@ -409,6 +407,12 @@ func validateDockerHubRepoExists(errs *[]error, newConfigYaml *config.Config) {
 }
 
 func fetchDockerHubRepositories() (map[string]struct{}, error) {
+	d := autoupdate.DockerHub{}
+	token, err := d.GetDockerAuthToken()
+	if err != nil {
+		return nil, fmt.Errorf("failed to create token: %w", err)
+	}
+
 	type DockerAPIResponseRepository struct {
 		Name string `json:"name"`
 	}
@@ -427,6 +431,7 @@ func fetchDockerHubRepositories() (map[string]struct{}, error) {
 		if err != nil {
 			return nil, fmt.Errorf("failed to create request: %w", err)
 		}
+		req.Header.Set("Authorization", "Bearer "+token)
 		resp, err := client.Do(req)
 		if err != nil {
 			return nil, fmt.Errorf("request failed: %w", err)

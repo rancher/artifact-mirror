@@ -66,3 +66,21 @@ func GetFileContentAtCommit(commit, filePath string) ([]byte, error) {
 	}
 	return out, nil
 }
+
+func DiffConfigRegsync() ([]byte, error) {
+	cmd := exec.Command("git", "-P", "diff", "config.yaml", "regsync.yaml")
+	out, err := cmd.Output()
+	if err != nil {
+		return nil, fmt.Errorf("failed to get diff: %w", err)
+	}
+	return out, nil
+}
+
+func RestoreConfigRegsync() error {
+	cmd := exec.Command("git", "restore", "config.yaml", "regsync.yaml")
+	err := cmd.Run()
+	if err != nil {
+		return fmt.Errorf("failed to git restore config.yaml and regsync.yaml files: %w", err)
+	}
+	return nil
+}

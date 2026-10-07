@@ -1,12 +1,10 @@
-name: Autoupdate
+name: Autoupdate Dry Run
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 13 * * *'
 
 permissions:
-  contents: write
-  pull-requests: write
+  contents: read
+  pull-requests: read
   id-token: write
 
 jobs:
@@ -46,7 +44,7 @@ jobs:
     - name: Build tooling
       run: scripts/build-tools.sh
 
-    - name: Run autoupdate
-      run: bin/artifact-mirror-tools autoupdate
+    - name: Run autoupdate --dry-run
+      run: bin/artifact-mirror-tools autoupdate --dry-run
       env:
         GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}

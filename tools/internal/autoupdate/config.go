@@ -240,14 +240,7 @@ func (entry ConfigEntry) Run(ctx context.Context, opts AutoUpdateOptions) error 
 	}
 
 	if opts.DryRun {
-		msg := fmt.Sprintf("%s: would make PR under branch %s that adds:\n", entry.Name, branchName)
-		for _, artifactToUpdate := range artifactsToUpdate {
-			for _, fullArtifact := range artifactToUpdate.CombineSourceArtifactAndTags() {
-				msg = msg + "  - " + fullArtifact + "\n"
-			}
-		}
-		fmt.Print(msg)
-		return nil
+		return entry.CreateArtifactUpdatePullRequestDryRun(ctx, opts, branchName, artifactsToUpdate)
 	}
 
 	return entry.CreateArtifactUpdatePullRequest(ctx, opts, branchName, artifactsToUpdate)
@@ -326,6 +319,55 @@ func (entry ConfigEntry) CreateArtifactUpdatePullRequest(ctx context.Context, op
 	}
 	fmt.Printf("Added reviewers [%v] to PR %s\n", entry.Reviewers, pullRequest.GetHTMLURL())
 	return nil
+}
+
+func (entry ConfigEntry) CreateArtifactUpdatePullRequestDryRun(ctx context.Context, opts AutoUpdateOptions, branchName string, artifactsToUpdate []*config.Artifact) error {
+	accumulator := config.NewArtifactAccumulator()
+	accumulator.AddArtifacts(opts.ConfigYaml.Artifacts...)
+
+	tagCount := 0
+	body := "This PR was created by the autoupdate workflow.\n\nIt adds the following artifact tags:"
+	msg := fmt.Sprintf("%s: would make PR under branch %s that adds:\n", entry.Name, branchName)
+
+	for _, artifactToUpdate := range artifactsToUpdate {
+		configYaml := opts.ConfigYaml
+		accumulator.AddArtifacts(artifactToUpdate)
+		configYaml.Artifacts = accumulator.Artifacts()
+		if err := config.Write(paths.ConfigYaml, configYaml); err != nil {
+			return fmt.Errorf("failed to write %s: %w", paths.ConfigYaml, err)
+		}
+
+		tagCount = tagCount + len(artifactToUpdate.Tags)
+
+		for _, fullArtifact := range artifactToUpdate.CombineSourceArtifactAndTags() {
+			body = body + "\n- `" + fullArtifact + "`"
+			msg = msg + "  - " + fullArtifact + "\n"
+		}
+
+		regsyncYaml, err := configYaml.ToRegsyncConfig()
+		if err != nil {
+			return fmt.Errorf("failed to generate regsync config for commit for artifact %s: %w", artifactToUpdate.SourceArtifact, err)
+		}
+		if err := regsync.WriteConfig(paths.RegsyncYaml, regsyncYaml); err != nil {
+			return fmt.Errorf("failed to write regsync config for commit for artifact %s: %w", artifactToUpdate.SourceArtifact, err)
+		}
+	}
+	fmt.Println("=================================")
+	fmt.Print(msg)
+	fmt.Println("---------------------------------")
+	fmt.Println("Pull Request Body")
+	fmt.Println("---------------------------------")
+	fmt.Println(body)
+	fmt.Println("---------------------------------")
+	fmt.Println("Diff Content")
+	fmt.Println("---------------------------------")
+	diff, err := git.DiffConfigRegsync()
+	if err != nil {
+		return fmt.Errorf("failed to diff: %w", err)
+	}
+	fmt.Print(string(diff))
+	fmt.Println("=================================")
+	return git.RestoreConfigRegsync()
 }
 
 // hashArtifactSet computes a human-readable hash from a passed
