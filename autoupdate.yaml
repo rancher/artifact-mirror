@@ -319,6 +319,13 @@
   Name: metrics-server
   Reviewers:
   - rancher/k3s
+- Name: multi-networkpolicy-nftables
+  Registry:
+    Artifacts:
+    - SourceArtifact: ghcr.io/k8snetworkplumbingwg/multi-networkpolicy-nftables
+    VersionFilter: ^v[0-9]+\.[0-9]+\.[0-9]+$
+  Reviewers:
+  - rancher/k3s-networking
 - GithubRelease:
     Artifacts:
     - SourceArtifact: idealista/prom2teams

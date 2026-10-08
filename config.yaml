@@ -563,6 +563,9 @@ Artifacts:
   Tags:
   - 1.7.4
   - 1.8.0
+- SourceArtifact: ghcr.io/k8snetworkplumbingwg/multi-networkpolicy-nftables
+  Tags:
+  - v0.1.0
 - SourceArtifact: ghcr.io/kube-logging/config-reloader
   Tags:
   - v0.0.5
