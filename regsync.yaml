@@ -2564,6 +2564,15 @@ sync:
 - source: ghcr.io/jkroepke/kube-webhook-certgen:1.8.0
   target: stgregistry.suse.com/rancher/mirrored-jkroepke-kube-webhook-certgen:1.8.0
   type: image
+- source: ghcr.io/k8snetworkplumbingwg/multi-networkpolicy-nftables:v0.1.0
+  target: docker.io/rancher/mirrored-k8snetworkplumbingwg-multi-networkpolicy-nftables:v0.1.0
+  type: image
+- source: ghcr.io/k8snetworkplumbingwg/multi-networkpolicy-nftables:v0.1.0
+  target: registry.suse.com/rancher/mirrored-k8snetworkplumbingwg-multi-networkpolicy-nftables:v0.1.0
+  type: image
+- source: ghcr.io/k8snetworkplumbingwg/multi-networkpolicy-nftables:v0.1.0
+  target: stgregistry.suse.com/rancher/mirrored-k8snetworkplumbingwg-multi-networkpolicy-nftables:v0.1.0
+  type: image
 - source: ghcr.io/kube-logging/config-reloader:v0.0.5
   target: docker.io/rancher/mirrored-kube-logging-config-reloader:v0.0.5
   type: image
