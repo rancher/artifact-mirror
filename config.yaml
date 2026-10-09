@@ -152,6 +152,7 @@ Artifacts:
   - 13.0.1-3.4
   - 13.0.1-3.5
   - 13.0.1-4.1
+  - 13.0.10-9.5
 - SourceArtifact: dp.apps.rancher.io/containers/grafana-image-renderer
   Tags:
   - "5"
