@@ -3215,6 +3215,20 @@ Artifacts:
   Tags:
   - v0.12.0
   TargetArtifactName: mirrored-coreos-flannel
+- SourceArtifact: rancher/klipper-helm
+  Tags:
+  - v0.13.3-build20261014
+  TargetArtifactName: klipper-helm
+  TargetRepositories:
+  - registry.suse.com/rancher
+  - stgregistry.suse.com/rancher
+- SourceArtifact: rancher/klipper-lb
+  Tags:
+  - v0.4.17
+  TargetArtifactName: klipper-lb
+  TargetRepositories:
+  - registry.suse.com/rancher
+  - stgregistry.suse.com/rancher
 - SourceArtifact: rancher/metrics-server
   Tags:
   - v0.3.4

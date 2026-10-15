@@ -295,6 +295,24 @@
   - rancher/k3s-networking
 - GithubRelease:
     Artifacts:
+    - SourceArtifact: rancher/klipper-helm
+    LatestOnly: true
+    Owner: k3s-io
+    Repository: klipper-helm
+  Name: klipper-helm
+  Reviewers:
+  - rancher/k3s
+- GithubRelease:
+    Artifacts:
+    - SourceArtifact: rancher/klipper-lb
+    LatestOnly: true
+    Owner: k3s-io
+    Repository: klipper-lb
+  Name: klipper-lb
+  Reviewers:
+  - rancher/k3s
+- GithubRelease:
+    Artifacts:
     - SourceArtifact: ghcr.io/kube-vip/kube-vip-iptables
     LatestOnly: true
     Owner: kube-vip
