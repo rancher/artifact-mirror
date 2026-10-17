@@ -3230,6 +3230,9 @@ Artifacts:
   TargetRepositories:
   - registry.suse.com/rancher
   - stgregistry.suse.com/rancher
+- SourceArtifact: rancher/klipper-lb
+  Tags:
+  - v0.4.17
 - SourceArtifact: rancher/metrics-server
   Tags:
   - v0.3.4
