@@ -22925,6 +22925,15 @@ sync:
 - source: rancher/klipper-helm:v0.13.3-build20261014
   target: stgregistry.suse.com/rancher/klipper-helm:v0.13.3-build20261014
   type: image
+- source: rancher/klipper-helm:v0.13.3-build20261014
+  target: docker.io/rancher/mirrored-rancher-klipper-helm:v0.13.3-build20261014
+  type: image
+- source: rancher/klipper-helm:v0.13.3-build20261014
+  target: registry.suse.com/rancher/mirrored-rancher-klipper-helm:v0.13.3-build20261014
+  type: image
+- source: rancher/klipper-helm:v0.13.3-build20261014
+  target: stgregistry.suse.com/rancher/mirrored-rancher-klipper-helm:v0.13.3-build20261014
+  type: image
 - source: rancher/klipper-lb:v0.4.17
   target: registry.suse.com/rancher/klipper-lb:v0.4.17
   type: image
