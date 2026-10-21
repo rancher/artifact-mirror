@@ -3226,6 +3226,7 @@ Artifacts:
 - SourceArtifact: rancher/klipper-helm
   Tags:
   - v0.13.3-build20261014
+  - v0.13.3-build20261021
 - SourceArtifact: rancher/klipper-lb
   Tags:
   - v0.4.17
