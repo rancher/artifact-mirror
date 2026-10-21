@@ -296,6 +296,7 @@
 - GithubRelease:
     Artifacts:
     - SourceArtifact: rancher/klipper-helm
+      TargetArtifactName: klipper-helm
     LatestOnly: true
     Owner: k3s-io
     Repository: klipper-helm
@@ -305,6 +306,7 @@
 - GithubRelease:
     Artifacts:
     - SourceArtifact: rancher/klipper-lb
+      TargetArtifactName: klipper-lb
     LatestOnly: true
     Owner: k3s-io
     Repository: klipper-lb
