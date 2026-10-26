@@ -128,10 +128,12 @@
   - rancher/k3s-networking
 - GithubRelease:
     Artifacts:
+    - SourceArtifact: quay.io/calico/calico
     - SourceArtifact: quay.io/calico/envoy-gateway
     - SourceArtifact: quay.io/calico/envoy-proxy
     - SourceArtifact: quay.io/calico/envoy-ratelimit
     - SourceArtifact: quay.io/calico/node
+    - SourceArtifact: quay.io/calico/third-party-cni-plugins
     - SourceArtifact: quay.io/calico/whisker
     Owner: projectcalico
     Repository: calico
