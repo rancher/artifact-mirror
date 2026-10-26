@@ -21,15 +21,13 @@ sync:
 - source: neuvector/updater:latest
   target: rancher/mirrored-neuvector-updater:latest
   type: image
-# Go 1.25 and 1.26 from AppCo, used for multi-stage builds and ci-image
+# Go 1.26 and 1.27 from AppCo, used for multi-stage builds and ci-image
 - source: dp.apps.rancher.io/containers/go
   target: registry.suse.com/rancher/appco-go
   type: repository
   tagSets:
     - semverRange:
-      - '>=1.25.11' # replace with >=1.26 when 1.25 is deprecated
+      - '>=1.26'
       allow:
       - '\d+\.\d+$'
       - '\d+\.\d+\.\d+$'
-    - allow: # temporary, delete when 1.25 is deprecated
-      - '1.25'
