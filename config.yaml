@@ -1861,6 +1861,9 @@ Artifacts:
   - v3.32.0
   - v3.32.1
   - v3.32.2
+- SourceArtifact: quay.io/calico/calico
+  Tags:
+  - v3.33.0
 - SourceArtifact: quay.io/calico/cni
   Tags:
   - v3.16.5
@@ -2300,6 +2303,9 @@ Artifacts:
   - v3.32.0
   - v3.32.1
   - v3.32.2
+- SourceArtifact: quay.io/calico/third-party-cni-plugins
+  Tags:
+  - v3.33.0
 - SourceArtifact: quay.io/calico/typha
   Tags:
   - v3.18.1

@@ -12368,6 +12368,15 @@ sync:
 - source: quay.io/calico/apiserver:v3.32.2
   target: stgregistry.suse.com/rancher/mirrored-calico-apiserver:v3.32.2
   type: image
+- source: quay.io/calico/calico:v3.33.0
+  target: docker.io/rancher/mirrored-calico-calico:v3.33.0
+  type: image
+- source: quay.io/calico/calico:v3.33.0
+  target: registry.suse.com/rancher/mirrored-calico-calico:v3.33.0
+  type: image
+- source: quay.io/calico/calico:v3.33.0
+  target: stgregistry.suse.com/rancher/mirrored-calico-calico:v3.33.0
+  type: image
 - source: quay.io/calico/cni:v3.16.5
   target: docker.io/rancher/calico-cni:v3.16.5
   type: image
@@ -15985,6 +15994,15 @@ sync:
   type: image
 - source: quay.io/calico/pod2daemon-flexvol:v3.32.2
   target: stgregistry.suse.com/rancher/mirrored-calico-pod2daemon-flexvol:v3.32.2
+  type: image
+- source: quay.io/calico/third-party-cni-plugins:v3.33.0
+  target: docker.io/rancher/mirrored-calico-third-party-cni-plugins:v3.33.0
+  type: image
+- source: quay.io/calico/third-party-cni-plugins:v3.33.0
+  target: registry.suse.com/rancher/mirrored-calico-third-party-cni-plugins:v3.33.0
+  type: image
+- source: quay.io/calico/third-party-cni-plugins:v3.33.0
+  target: stgregistry.suse.com/rancher/mirrored-calico-third-party-cni-plugins:v3.33.0
   type: image
 - source: quay.io/calico/typha:v3.18.1
   target: docker.io/rancher/mirrored-calico-typha:v3.18.1
