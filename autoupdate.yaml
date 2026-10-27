@@ -303,6 +303,28 @@
   - rancher/k3s-networking
 - GithubRelease:
     Artifacts:
+    - SourceArtifact: docker.io/rancher/harvester-cloud-provider
+      TargetArtifactName: rancher-harvester-cloud-provider
+    LatestOnly: true
+    Owner: harvester
+    Repository: harvester-cloud-provider
+  Name: harvester-cloud-provider
+  Reviewers:
+  - rancher/k3s-networking
+  - rancher/harvester
+- GithubRelease:
+    Artifacts:
+    - SourceArtifact: docker.io/rancher/harvester-csi-driver
+      TargetArtifactName: rancher-harvester-csi-driver
+    LatestOnly: true
+    Owner: harvester
+    Repository: harvester-csi-driver
+  Name: harvester-csi-driver
+  Reviewers:
+  - rancher/k3s-networking
+  - rancher/harvester
+- GithubRelease:
+    Artifacts:
     - SourceArtifact: rancher/klipper-helm
       TargetArtifactName: klipper-helm
     LatestOnly: true

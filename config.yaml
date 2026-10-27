@@ -3227,6 +3227,19 @@ Artifacts:
   Tags:
   - v0.12.0
   TargetArtifactName: mirrored-coreos-flannel
+- SourceArtifact: rancher/harvester-cloud-provider
+  Tags:
+  - v0.2.10
+  - v0.2.8
+  - v0.2.9
+  TargetArtifactName: harvester-cloud-provider
+- SourceArtifact: rancher/harvester-csi-driver
+  Tags:
+  - v0.2.10
+  - v0.2.11
+  - v0.2.8
+  - v0.2.9
+  TargetArtifactName: harvester-csi-driver
 - SourceArtifact: rancher/klipper-helm
   Tags:
   - v0.13.3-build20261014
