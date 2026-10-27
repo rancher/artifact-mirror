@@ -23018,6 +23018,48 @@ sync:
 - source: rancher/coreos-flannel:v0.12.0
   target: stgregistry.suse.com/rancher/mirrored-coreos-flannel:v0.12.0
   type: image
+- source: rancher/harvester-cloud-provider:v0.2.10
+  target: registry.suse.com/rancher/harvester-cloud-provider:v0.2.10
+  type: image
+- source: rancher/harvester-cloud-provider:v0.2.8
+  target: registry.suse.com/rancher/harvester-cloud-provider:v0.2.8
+  type: image
+- source: rancher/harvester-cloud-provider:v0.2.9
+  target: registry.suse.com/rancher/harvester-cloud-provider:v0.2.9
+  type: image
+- source: rancher/harvester-cloud-provider:v0.2.10
+  target: stgregistry.suse.com/rancher/harvester-cloud-provider:v0.2.10
+  type: image
+- source: rancher/harvester-cloud-provider:v0.2.8
+  target: stgregistry.suse.com/rancher/harvester-cloud-provider:v0.2.8
+  type: image
+- source: rancher/harvester-cloud-provider:v0.2.9
+  target: stgregistry.suse.com/rancher/harvester-cloud-provider:v0.2.9
+  type: image
+- source: rancher/harvester-csi-driver:v0.2.10
+  target: registry.suse.com/rancher/harvester-csi-driver:v0.2.10
+  type: image
+- source: rancher/harvester-csi-driver:v0.2.11
+  target: registry.suse.com/rancher/harvester-csi-driver:v0.2.11
+  type: image
+- source: rancher/harvester-csi-driver:v0.2.8
+  target: registry.suse.com/rancher/harvester-csi-driver:v0.2.8
+  type: image
+- source: rancher/harvester-csi-driver:v0.2.9
+  target: registry.suse.com/rancher/harvester-csi-driver:v0.2.9
+  type: image
+- source: rancher/harvester-csi-driver:v0.2.10
+  target: stgregistry.suse.com/rancher/harvester-csi-driver:v0.2.10
+  type: image
+- source: rancher/harvester-csi-driver:v0.2.11
+  target: stgregistry.suse.com/rancher/harvester-csi-driver:v0.2.11
+  type: image
+- source: rancher/harvester-csi-driver:v0.2.8
+  target: stgregistry.suse.com/rancher/harvester-csi-driver:v0.2.8
+  type: image
+- source: rancher/harvester-csi-driver:v0.2.9
+  target: stgregistry.suse.com/rancher/harvester-csi-driver:v0.2.9
+  type: image
 - source: rancher/klipper-helm:v0.13.3-build20261014
   target: registry.suse.com/rancher/klipper-helm:v0.13.3-build20261014
   type: image
