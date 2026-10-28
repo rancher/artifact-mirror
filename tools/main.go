@@ -373,6 +373,8 @@ func validateDockerHubRepoExists(errs *[]error, newConfigYaml *config.Config) {
 		return
 	}
 
+	const namespace = "rancher"
+
 	// get artifacts that were added in this branch
 	newArtifacts := make([]*config.Artifact, 0, len(newConfigYaml.Artifacts))
 	accumulator := config.NewArtifactAccumulator()
@@ -381,27 +383,44 @@ func validateDockerHubRepoExists(errs *[]error, newConfigYaml *config.Config) {
 		if accumulator.Contains(newArtifact) {
 			continue
 		}
-		if len(newArtifact.TargetRepositories) > 0 && !slices.Contains(newArtifact.TargetRepositories, "docker.io/rancher") {
+		if len(newArtifact.TargetRepositories) > 0 && !slices.Contains(newArtifact.TargetRepositories, "docker.io/"+namespace) {
 			continue
 		}
 		newArtifacts = append(newArtifacts, newArtifact)
 	}
-	if len(newArtifacts) == 0 {
-		return
+
+	// Listing all repositories requires authenticated requests
+	var existingRepositories map[string]struct{}
+	if os.Getenv("DOCKER_PASSWORD") != "" {
+		existingRepositories, err = fetchDockerHubRepositories()
+		if err != nil {
+			*errs = append(*errs, fmt.Errorf("failed to fetch dockerhub repositories: %w", err))
+			return
+		}
 	}
 
-	// fetch existing repositories from dockerhub
-	existingRepositories, err := fetchDockerHubRepositories()
-	if err != nil {
-		*errs = append(*errs, fmt.Errorf("failed to fetch existing repositories from dockerhub: %w", err))
-		return
-	}
-
+	seen := map[string]struct{}{}
 	for _, newArtifact := range newArtifacts {
 		targetArtifactName := newArtifact.TargetArtifactName()
-		_, repoExists := existingRepositories[targetArtifactName]
-		if !repoExists {
-			*errs = append(*errs, fmt.Errorf("repository rancher/%s does not exist on dockerhub", targetArtifactName))
+
+		if _, ok := seen[targetArtifactName]; ok {
+			continue
+		}
+		seen[targetArtifactName] = struct{}{}
+
+		if existingRepositories != nil {
+			_, repoExists := existingRepositories[targetArtifactName]
+			if !repoExists {
+				*errs = append(*errs, fmt.Errorf("repository rancher/%s does not exist on dockerhub", targetArtifactName))
+			}
+			continue
+		}
+
+		// fallback to individual requests if credentials were not available
+		if repoExists, err := dockerHubRepoExists(namespace, targetArtifactName); err != nil {
+			*errs = append(*errs, fmt.Errorf("checking existence of repository %s/%s dockerhub", namespace, targetArtifactName))
+		} else if !repoExists {
+			*errs = append(*errs, fmt.Errorf("repository %s/%s does not exist on dockerhub", namespace, targetArtifactName))
 		}
 	}
 }
@@ -457,4 +476,30 @@ func fetchDockerHubRepositories() (map[string]struct{}, error) {
 	}
 
 	return repos, nil
+}
+
+func dockerHubRepoExists(namespace, repo string) (bool, error) {
+	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+	defer cancel()
+
+	// https://docs.docker.com/reference/api/hub/latest/operations/CheckRepository/
+	url := "https://hub.docker.com/v2/namespaces/" + namespace + "/repositories/" + repo
+	req, err := http.NewRequestWithContext(ctx, "HEAD", url, nil)
+	if err != nil {
+		return false, fmt.Errorf("failed to create HEAD request: %w", err)
+	}
+	res, err := http.DefaultClient.Do(req)
+	if err != nil {
+		return false, err
+	}
+	defer res.Body.Close() //nolint:errcheck
+
+	switch res.StatusCode {
+	case http.StatusOK:
+		return true, nil
+	case http.StatusNotFound:
+		return false, nil
+	default:
+		return false, fmt.Errorf("unexpected status code: %d", res.StatusCode)
+	}
 }
