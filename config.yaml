@@ -3459,6 +3459,7 @@ Artifacts:
   - v0.8.0
   - v0.8.1
   - v0.9.0
+  - v0.9.1
   TargetArtifactName: mirrored-metrics-server
 - SourceArtifact: registry.k8s.io/pause
   Tags:
