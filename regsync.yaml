@@ -23273,11 +23273,17 @@ sync:
 - source: rancher/klipper-helm:v0.13.3-build20261021
   target: registry.suse.com/rancher/klipper-helm:v0.13.3-build20261021
   type: image
+- source: rancher/klipper-helm:v0.14.0-build20261106
+  target: registry.suse.com/rancher/klipper-helm:v0.14.0-build20261106
+  type: image
 - source: rancher/klipper-helm:v0.13.3-build20261014
   target: stgregistry.suse.com/rancher/klipper-helm:v0.13.3-build20261014
   type: image
 - source: rancher/klipper-helm:v0.13.3-build20261021
   target: stgregistry.suse.com/rancher/klipper-helm:v0.13.3-build20261021
+  type: image
+- source: rancher/klipper-helm:v0.14.0-build20261106
+  target: stgregistry.suse.com/rancher/klipper-helm:v0.14.0-build20261106
   type: image
 - source: rancher/klipper-lb:v0.4.17
   target: registry.suse.com/rancher/klipper-lb:v0.4.17

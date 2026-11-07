@@ -3275,6 +3275,7 @@ Artifacts:
   Tags:
   - v0.13.3-build20261014
   - v0.13.3-build20261021
+  - v0.14.0-build20261106
   TargetArtifactName: klipper-helm
   TargetRepositories:
   - registry.suse.com/rancher
