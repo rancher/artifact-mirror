@@ -1029,6 +1029,7 @@ Artifacts:
   - 1.31.2-alpine
   - 1.31.3-alpine
   - 1.31.8-alpine
+  - 1.31.8-alpine3.24-slim
 - SourceArtifact: library/redis
   Tags:
   - 7.2.9
