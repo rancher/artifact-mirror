@@ -393,6 +393,14 @@
     VersionFilter: ^1\.[0-9]+\.[0-9]+-alpine$
   Reviewers:
   - rancher/orbs
+- Name: nginx-alpine-slim
+  Registry:
+    Artifacts:
+    - SourceArtifact: library/nginx
+    Latest: true
+    VersionFilter: ^1\.[0-9]+\.[0-9]+-alpine[0-9]+\.[0-9]+-slim$
+  Reviewers:
+  - rancher/orbs
 - GithubRelease:
     Artifacts:
     - SourceArtifact: idealista/prom2teams
