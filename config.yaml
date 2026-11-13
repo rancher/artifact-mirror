@@ -3291,6 +3291,7 @@ Artifacts:
 - SourceArtifact: rancher/klipper-lb
   Tags:
   - v0.4.17
+  - v0.4.18
   TargetArtifactName: klipper-lb
   TargetRepositories:
   - registry.suse.com/rancher
