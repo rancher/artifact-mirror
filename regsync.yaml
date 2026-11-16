@@ -12560,11 +12560,20 @@ sync:
 - source: quay.io/calico/calico:v3.33.0
   target: docker.io/rancher/mirrored-calico-calico:v3.33.0
   type: image
+- source: quay.io/calico/calico:v3.33.1
+  target: docker.io/rancher/mirrored-calico-calico:v3.33.1
+  type: image
 - source: quay.io/calico/calico:v3.33.0
   target: registry.suse.com/rancher/mirrored-calico-calico:v3.33.0
   type: image
+- source: quay.io/calico/calico:v3.33.1
+  target: registry.suse.com/rancher/mirrored-calico-calico:v3.33.1
+  type: image
 - source: quay.io/calico/calico:v3.33.0
   target: stgregistry.suse.com/rancher/mirrored-calico-calico:v3.33.0
+  type: image
+- source: quay.io/calico/calico:v3.33.1
+  target: stgregistry.suse.com/rancher/mirrored-calico-calico:v3.33.1
   type: image
 - source: quay.io/calico/cni:v3.16.5
   target: docker.io/rancher/calico-cni:v3.16.5

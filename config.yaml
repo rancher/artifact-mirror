@@ -1891,6 +1891,7 @@ Artifacts:
 - SourceArtifact: quay.io/calico/calico
   Tags:
   - v3.33.0
+  - v3.33.1
 - SourceArtifact: quay.io/calico/cni
   Tags:
   - v3.16.5
