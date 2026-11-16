@@ -659,6 +659,15 @@ sync:
 - source: directxman12/k8s-prometheus-adapter-amd64:v0.8.3
   target: stgregistry.suse.com/rancher/mirrored-directxman12-k8s-prometheus-adapter-amd64:v0.8.3
   type: image
+- source: docker.io/rancher/harvester-cloud-provider:v0.2.10
+  target: docker.io/rancher/rancher-harvester-cloud-provider:v0.2.10
+  type: image
+- source: docker.io/rancher/harvester-cloud-provider:v0.2.10
+  target: registry.suse.com/rancher/rancher-harvester-cloud-provider:v0.2.10
+  type: image
+- source: docker.io/rancher/harvester-cloud-provider:v0.2.10
+  target: stgregistry.suse.com/rancher/rancher-harvester-cloud-provider:v0.2.10
+  type: image
 - source: dp.apps.rancher.io/charts/kubernetes-cluster-autoscaler:9.50.1
   target: registry.suse.com/rancher/charts/appco-kubernetes-cluster-autoscaler:9.50.1
   type: image
