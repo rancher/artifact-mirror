@@ -21371,6 +21371,12 @@ sync:
 - source: quay.io/coreos/etcd:v3.5.34
   target: docker.io/rancher/mirrored-coreos-etcd:v3.5.34
   type: image
+- source: quay.io/coreos/etcd:v3.5.35
+  target: docker.io/rancher/mirrored-coreos-etcd:v3.5.35
+  type: image
+- source: quay.io/coreos/etcd:v3.5.36
+  target: docker.io/rancher/mirrored-coreos-etcd:v3.5.36
+  type: image
 - source: quay.io/coreos/etcd:v3.5.4
   target: docker.io/rancher/mirrored-coreos-etcd:v3.5.4
   type: image
@@ -21407,6 +21413,12 @@ sync:
 - source: quay.io/coreos/etcd:v3.6.15
   target: docker.io/rancher/mirrored-coreos-etcd:v3.6.15
   type: image
+- source: quay.io/coreos/etcd:v3.6.16
+  target: docker.io/rancher/mirrored-coreos-etcd:v3.6.16
+  type: image
+- source: quay.io/coreos/etcd:v3.6.17
+  target: docker.io/rancher/mirrored-coreos-etcd:v3.6.17
+  type: image
 - source: quay.io/coreos/etcd:v3.6.2
   target: docker.io/rancher/mirrored-coreos-etcd:v3.6.2
   type: image
@@ -21439,6 +21451,12 @@ sync:
   type: image
 - source: quay.io/coreos/etcd:v3.7.2
   target: docker.io/rancher/mirrored-coreos-etcd:v3.7.2
+  type: image
+- source: quay.io/coreos/etcd:v3.7.3
+  target: docker.io/rancher/mirrored-coreos-etcd:v3.7.3
+  type: image
+- source: quay.io/coreos/etcd:v3.7.4
+  target: docker.io/rancher/mirrored-coreos-etcd:v3.7.4
   type: image
 - source: quay.io/coreos/etcd:v3.5.0
   target: registry.suse.com/rancher/mirrored-coreos-etcd:v3.5.0
@@ -21524,6 +21542,12 @@ sync:
 - source: quay.io/coreos/etcd:v3.5.34
   target: registry.suse.com/rancher/mirrored-coreos-etcd:v3.5.34
   type: image
+- source: quay.io/coreos/etcd:v3.5.35
+  target: registry.suse.com/rancher/mirrored-coreos-etcd:v3.5.35
+  type: image
+- source: quay.io/coreos/etcd:v3.5.36
+  target: registry.suse.com/rancher/mirrored-coreos-etcd:v3.5.36
+  type: image
 - source: quay.io/coreos/etcd:v3.5.4
   target: registry.suse.com/rancher/mirrored-coreos-etcd:v3.5.4
   type: image
@@ -21560,6 +21584,12 @@ sync:
 - source: quay.io/coreos/etcd:v3.6.15
   target: registry.suse.com/rancher/mirrored-coreos-etcd:v3.6.15
   type: image
+- source: quay.io/coreos/etcd:v3.6.16
+  target: registry.suse.com/rancher/mirrored-coreos-etcd:v3.6.16
+  type: image
+- source: quay.io/coreos/etcd:v3.6.17
+  target: registry.suse.com/rancher/mirrored-coreos-etcd:v3.6.17
+  type: image
 - source: quay.io/coreos/etcd:v3.6.2
   target: registry.suse.com/rancher/mirrored-coreos-etcd:v3.6.2
   type: image
@@ -21592,6 +21622,12 @@ sync:
   type: image
 - source: quay.io/coreos/etcd:v3.7.2
   target: registry.suse.com/rancher/mirrored-coreos-etcd:v3.7.2
+  type: image
+- source: quay.io/coreos/etcd:v3.7.3
+  target: registry.suse.com/rancher/mirrored-coreos-etcd:v3.7.3
+  type: image
+- source: quay.io/coreos/etcd:v3.7.4
+  target: registry.suse.com/rancher/mirrored-coreos-etcd:v3.7.4
   type: image
 - source: quay.io/coreos/etcd:v3.5.0
   target: stgregistry.suse.com/rancher/mirrored-coreos-etcd:v3.5.0
@@ -21677,6 +21713,12 @@ sync:
 - source: quay.io/coreos/etcd:v3.5.34
   target: stgregistry.suse.com/rancher/mirrored-coreos-etcd:v3.5.34
   type: image
+- source: quay.io/coreos/etcd:v3.5.35
+  target: stgregistry.suse.com/rancher/mirrored-coreos-etcd:v3.5.35
+  type: image
+- source: quay.io/coreos/etcd:v3.5.36
+  target: stgregistry.suse.com/rancher/mirrored-coreos-etcd:v3.5.36
+  type: image
 - source: quay.io/coreos/etcd:v3.5.4
   target: stgregistry.suse.com/rancher/mirrored-coreos-etcd:v3.5.4
   type: image
@@ -21713,6 +21755,12 @@ sync:
 - source: quay.io/coreos/etcd:v3.6.15
   target: stgregistry.suse.com/rancher/mirrored-coreos-etcd:v3.6.15
   type: image
+- source: quay.io/coreos/etcd:v3.6.16
+  target: stgregistry.suse.com/rancher/mirrored-coreos-etcd:v3.6.16
+  type: image
+- source: quay.io/coreos/etcd:v3.6.17
+  target: stgregistry.suse.com/rancher/mirrored-coreos-etcd:v3.6.17
+  type: image
 - source: quay.io/coreos/etcd:v3.6.2
   target: stgregistry.suse.com/rancher/mirrored-coreos-etcd:v3.6.2
   type: image
@@ -21745,6 +21793,12 @@ sync:
   type: image
 - source: quay.io/coreos/etcd:v3.7.2
   target: stgregistry.suse.com/rancher/mirrored-coreos-etcd:v3.7.2
+  type: image
+- source: quay.io/coreos/etcd:v3.7.3
+  target: stgregistry.suse.com/rancher/mirrored-coreos-etcd:v3.7.3
+  type: image
+- source: quay.io/coreos/etcd:v3.7.4
+  target: stgregistry.suse.com/rancher/mirrored-coreos-etcd:v3.7.4
   type: image
 - source: quay.io/coreos/flannel:v0.13.0
   target: docker.io/rancher/mirrored-coreos-flannel:v0.13.0
