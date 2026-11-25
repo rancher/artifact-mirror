@@ -563,6 +563,7 @@ Artifacts:
   - v1.9.1-flannel3
   SourceArtifact: ghcr.io/flannel-io/flannel-cni-plugin
   Tags:
+  - v1.10.0-flannel1
   - v1.9.1-flannel3
   TargetArtifactName: mirrored-flannel-flannel-cni-plugin
 - SourceArtifact: ghcr.io/jimmidyson/configmap-reload
