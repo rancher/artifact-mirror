@@ -3411,6 +3411,7 @@ Artifacts:
   - v3.7.3
   - v3.7.4
   - v3.8.0
+  - v3.8.1
   TargetArtifactName: mirrored-cloud-provider-vsphere-csi-release-driver
 - SourceArtifact: registry.k8s.io/csi-vsphere/syncer
   Tags:
