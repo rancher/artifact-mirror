@@ -576,6 +576,7 @@ Artifacts:
 - SourceArtifact: ghcr.io/k8snetworkplumbingwg/multi-networkpolicy-nftables
   Tags:
   - v0.1.0
+  - v0.2.0
 - SourceArtifact: ghcr.io/k8snetworkplumbingwg/multus-dynamic-networks-controller
   Tags:
   - v0.2.0
